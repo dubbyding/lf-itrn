@@ -26,3 +26,8 @@
 
 - Mobile with gallery -> git
 - Google photos -> github
+
+## add origin i.e. link to github
+
+- git remote add origin "https/ssh link'
+- git remote -v => list all repo links
