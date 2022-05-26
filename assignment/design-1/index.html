@@ -15,22 +15,8 @@
 			<section>
 				<nav>
 					<ul>
-						<li>Home</li>
-						<li>End</li>
-					</ul>
-					<ul>
-						<li>
-							<form>
-								<label for="search">Search Topic</label>
-								<input
-									type="text"
-									name="Search"
-									id="search"
-									placeholder="Search"
-								/>
-								<input type="submit" value="submit" />
-							</form>
-						</li>
+						<li><a href="../../index.html">Home</a></li>
+						<li><a href="#end">End</a></li>
 					</ul>
 				</nav>
 
@@ -198,29 +184,58 @@
 			</article>
 		</section>
 		<hr />
+		<article>
+			<!--Form for subscription-->
+			<h2>Subscribe Now!</h2>
+			<form>
+				<div>
+					<label for="name">Full Name:- </label>
+					<input type="text" name="name" id="name" placeholder="Full Name" />
+				</div>
+				<div>
+					<label for="phone">Phone No:- </label>
+					<input
+						type="text"
+						name="phone"
+						id="phone"
+						placeholder="Phone Number"
+					/>
+				</div>
+				<div>
+					<label for="email">Email Address:- </label>
+					<input type="text" name="email" id="email" placeholder="Email Id" />
+				</div>
+				<input type="submit" value="Subscribe" />
+			</form>
+		</article>
 		<footer>
 			<section>
-				<span>
-					<a href="https://www.facebook.com/dubbyding/">
-						<i class="fa-brands fa-facebook"></i
-					></a>
-				</span>
-				<span>
-					<a href="https://www.linkedin.com/in/rajmhrj/">
-						<i class="fa-brands fa-linkedin"></i
-					></a> </span
-				><span>
-					<a href="https://www.instagram.com/rj_mhrj/">
-						<i class="fa-brands fa-instagram"></i
-					></a>
-				</span>
-				<span>
-					<a href="https://twitter.com/rj_mhrj">
-						<i class="fa-brands fa-twitter"></i
-					></a>
-				</span>
+				<!--Icons added for the purpose of linking to social sites-->
+				<article>
+					<span>
+						<a href="https://www.facebook.com/dubbyding/">
+							<i class="fa-brands fa-facebook"></i
+						></a>
+					</span>
+					<span>
+						<a href="https://www.linkedin.com/in/rajmhrj/">
+							<i class="fa-brands fa-linkedin"></i
+						></a> </span
+					><span>
+						<a href="https://www.instagram.com/rj_mhrj/">
+							<i class="fa-brands fa-instagram"></i
+						></a>
+					</span>
+					<span>
+						<a href="https://twitter.com/rj_mhrj">
+							<i class="fa-brands fa-twitter"></i
+						></a>
+					</span>
+				</article>
 				<br />
-				<b>Copyright</b><span><i class="fa-solid fa-copyright"></i></span>
+				<!--Copyright symbol-->
+				<b id="end">Copyright</b
+				><span><i class="fa-solid fa-copyright"></i></span>
 			</section>
 		</footer>
 	</body>
