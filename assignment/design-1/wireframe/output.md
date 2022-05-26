@@ -1,6 +1,6 @@
 ## Wireframe Assignment
 
-The initial sample is taken from `https://9anime.to/home`.
+The initial sample is taken from `https://9anime.to/home` and second one is taken from profile of github.
 
 | Actual Image                      | Wireframe                         |
 | --------------------------------- | --------------------------------- |
