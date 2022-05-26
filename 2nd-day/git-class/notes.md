@@ -1,7 +1,7 @@
 # GIT learning class (Leapfrog)
 
 - git init
-- git status -> gives the status of the repository
+- git status -&gt gives the status of the repository
 
 ## To ask git to track the file
 
@@ -15,19 +15,19 @@
 
 - git commit -m "MEssage"
 
-- git commit => Opens VIM or NANO
+- git commit =&gt Opens VIM or NANO
 
 ## To check all logs
 
 - git log
-- git log --oneline => To show oneline only
+- git log --oneline =&gt To show oneline only
 
 **GIT and GITHUB?**
 
-- Mobile with gallery -> git
-- Google photos -> github
+- Mobile with gallery -&gt git
+- Google photos -&gt github
 
 ## add origin i.e. link to github
 
 - git remote add origin "https/ssh link'
-- git remote -v => list all repo links
+- git remote -v =&gt list all repo links
