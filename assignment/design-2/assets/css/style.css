@@ -96,25 +96,28 @@ input[type^='button'] {
 	border-bottom: #e1e5e8 solid;
 	padding: 2.5% 0;
 }
+.non-primary-title {
+	padding: 6% 0 2.5% 0;
+}
 
 div.section-title > h1 {
 	font-size: 6vh;
 }
-.color-area {
+.subheader-body {
 	margin: 4% 0 1.5% 0;
 }
-div.color-area > h1 {
+div.subheader-body h1 {
 	font-size: 3vh;
 }
-div.color-area::after {
+div.subheader-body::after {
 	content: '';
 	clear: both;
 	display: table;
 }
-.color-display-area {
+.display-area {
 	margin: 2.5% 0 0 0;
 }
-.color-display-area::after {
+.display-area::after {
 	content: '';
 	clear: both;
 	display: table;
@@ -176,4 +179,20 @@ div.color-combo {
 }
 #gray-4 {
 	background-color: #212529;
+}
+/*
+	Second Section
+*/
+.stack-text {
+	float: left;
+	width: 50%;
+}
+.body-text {
+	padding: 0 20% 0 0;
+}
+.overline-class {
+	text-decoration: overline;
+}
+.lead-text {
+	font-size: 20px;
 }
