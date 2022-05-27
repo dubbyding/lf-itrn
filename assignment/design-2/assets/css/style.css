@@ -73,6 +73,8 @@ article.nav-logo > h1 {
 }
 ul.list-nav > li {
 	float: left;
+}
+ul.small-padding > li {
 	padding: 0 10px;
 }
 
@@ -198,4 +200,24 @@ article p[class*='sample-text'] {
 }
 .lead-text {
 	font-size: 20px;
+}
+/*
+	Tabs section
+*/
+.tab-section {
+	width: 50%;
+	margin: 2% 0;
+}
+.sample-text-top-margin {
+	margin-top: 5%;
+}
+.tab-nav {
+	width: 100%;
+	border-bottom: 1px solid #d3d3d3;
+	padding: 2.5% 2.5% 0 0;
+}
+li[class*='nav-border'] {
+	border: 1px solid #d3d3d3;
+	padding: 2.5%;
+	border-radius: 4px;
 }
