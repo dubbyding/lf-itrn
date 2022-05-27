@@ -5,11 +5,24 @@
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
 }
-.heading {
+.main-heading {
 	position: relative;
-	height: 80px;
-	background-color: #f8f9fa;
+	height: 90px;
 	width: 100%;
+	background-color: red;
+}
+.main-heading::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+.heading {
+	position: fixed;
+	height: 90px;
+	background-color: #f8f9fa;
+	opacity: 1;
+	width: 100%;
+	z-index: 1000;
 }
 .navigation {
 	position: absolute;
@@ -31,9 +44,16 @@ nav.navigation > article:not(:last-child) {
 }
 
 article.nav-logo > h1 {
+	font-size: x-large;
 	font-weight: 900;
 }
-
+.nav-logo {
+	margin-right: 2.5%;
+}
+.nav-contain {
+	margin-left: 2.5%;
+	padding: 0.5% 0;
+}
 .nav-search {
 	float: right;
 }
@@ -51,4 +71,103 @@ article.nav-logo > h1 {
 ul.list-nav > li {
 	float: left;
 	padding: 0 10px;
+}
+
+.btn {
+	border: 2px solid;
+	border-radius: 5px;
+	padding: 2.5% 20px;
+}
+input[type^='button'] {
+	border-color: #5fbc76;
+	color: #5fbc76;
+}
+.body {
+	position: relative;
+	padding: 0 10%;
+}
+.section-title {
+	border-bottom: #e1e5e8 solid;
+	padding: 2.5% 0;
+}
+
+div.section-title > h1 {
+	font-size: 6vh;
+}
+.color-area {
+	margin: 4% 0 1.5% 0;
+}
+div.color-area > h1 {
+	font-size: 3vh;
+}
+div.color-area::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+.color-display-area {
+	margin: 2.5% 0 0 0;
+}
+.color-display-area::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+div.color-combo {
+	float: left;
+	margin-right: 2.5%;
+}
+.color-area-actual {
+	width: 10vw;
+	height: 10vh;
+	margin-bottom: 12.5%;
+	background-color: red;
+	border-radius: 10px;
+}
+.color-area-padding {
+	padding: 50% 100%;
+}
+
+/*Following are the color code*/
+#primary {
+	background-color: #7749f8;
+}
+#primary-dark {
+	background-color: #5227cc;
+}
+#primary-light {
+	background-color: #ebe5fc;
+}
+#secondary {
+	background-color: #007dff;
+}
+#secondary-light {
+	background-color: #abb5be;
+}
+#secondary-dark {
+	background-color: #54595e;
+}
+#success {
+	background-color: #28a745;
+}
+#danger {
+	background-color: #dc3545;
+}
+#warning {
+	background-color: #ffc107;
+}
+#info {
+	background-color: #17a2b8;
+}
+#gray-1 {
+	background-color: #6c757d;
+}
+#gray-2 {
+	background-color: #495057;
+}
+#gray-3 {
+	background-color: #343a40;
+}
+#gray-4 {
+	background-color: #212529;
 }
