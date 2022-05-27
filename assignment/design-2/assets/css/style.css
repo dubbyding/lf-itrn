@@ -5,6 +5,9 @@
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
 }
+/*
+	Navigation Bar part
+*/
 .main-heading {
 	position: relative;
 	height: 90px;
@@ -82,6 +85,9 @@ input[type^='button'] {
 	border-color: #5fbc76;
 	color: #5fbc76;
 }
+/*
+	First section part
+*/
 .body {
 	position: relative;
 	padding: 0 10%;
