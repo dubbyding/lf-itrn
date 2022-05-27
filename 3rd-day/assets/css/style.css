@@ -1,0 +1,60 @@
+/*Type selector*/
+h1 {
+	color: red;
+}
+
+p {
+	color: blue;
+}
+
+/*Class selector*/
+
+.header {
+	font-size: 40px;
+}
+
+/*Id Selector*/
+#para {
+	font-style: italic;
+}
+/*Universal selector
+used to reset value*/
+* {
+	margin: 0;
+	padding: 0;
+}
+/*Attribute selector*/
+[type='text'] {
+	width: 200px;
+	border: 3px red solid;
+}
+
+/* Combination */
+body > ul > li > a {
+	color: green;
+}
+
+li ~ li {
+	/* All in the same level*/
+}
+li + li {
+	/* First child */
+}
+
+/* Pesudo-class Selectore */
+body > ul > li > a:hover {
+	color: red;
+}
+/* hover, active, focus */
+
+/* Pseudo elements */
+body > ul > li:last-child > a {
+	color: pink;
+}
+
+/* Box outline */
+.box {
+	margin: 10px;
+	padding: 10px;
+	border: 1px;
+}
