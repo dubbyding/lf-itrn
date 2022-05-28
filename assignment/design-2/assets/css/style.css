@@ -457,3 +457,38 @@ div.table-traverse > button:disabled {
 	color: white;
 	background-color: #7749f8;
 }
+.card-section {
+	float: left;
+	margin: 10vh 2vw 0 0;
+}
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.2s;
+	width: 20vw;
+}
+.card::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card-user {
+	float: left;
+}
+.card-user-detail::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+.card-user-right {
+	float: right;
+}
+.interact-card-section {
+}
+.interact-float {
+	float: left;
+	width: 33.33%;
+	border-bottom: 2px solid #ddd;
+}
