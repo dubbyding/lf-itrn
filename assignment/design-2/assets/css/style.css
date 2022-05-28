@@ -429,3 +429,31 @@ input:disabled + label {
 	clear: both;
 	display: table;
 }
+.table-section-table {
+	width: 100%;
+}
+.table-cell {
+	border-top: 2px solid #dee2de;
+	border-bottom: 2px solid #dee2de;
+	text-align: left;
+	padding: 1vw 0 1vw 1vh;
+}
+tbody.table-section-body > tr:nth-child(odd) {
+	background-color: #f2f2f2;
+}
+.table-traverse {
+	float: right;
+	margin-top: 2.5vh;
+}
+div.table-traverse > button {
+	padding: 0.7vw 2vh 0.7vw 2vh;
+	color: #7749f8;
+	border-radius: 8px;
+}
+div.table-traverse > button:disabled {
+	color: #ddd;
+}
+#selected-table {
+	color: white;
+	background-color: #7749f8;
+}
