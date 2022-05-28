@@ -74,6 +74,10 @@ article.nav-logo > h1 {
 ul.list-nav > li {
 	float: left;
 }
+ul.list-nav > li > a {
+	color: black;
+	text-decoration: none;
+}
 ul.small-padding > li {
 	padding: 0 10px;
 }
