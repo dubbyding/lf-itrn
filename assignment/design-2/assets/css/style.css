@@ -371,3 +371,61 @@ input:disabled + label {
 #input-error {
 	border-color: #dc3545;
 }
+/*
+	List Group area
+*/
+.list-group-area::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+.list-group-example,
+.list-group-custom-content {
+	width: 50%;
+}
+.list-group-example {
+	float: left;
+}
+.list-group-custom-content {
+	float: right;
+}
+.list-group-heading {
+	margin: 10vh 0 5vh 0;
+	font-size: 30px;
+}
+.list-group-example > ul {
+	border: 1px solid #dee2e6;
+	margin: 0 10vw 0 0;
+	border-radius: 10px;
+}
+.list-group-example > ul > li {
+	list-style-type: none;
+	border: 1px solid #dee2e6;
+	padding: 2.5% 0 2.5% 5%;
+}
+.color-change {
+	background-color: #7749f8;
+	color: white;
+}
+.list-group-custom-content > ul,
+.list-group-custom-content > div > h1.list-group-heading {
+	margin-left: 10vw;
+}
+.list-group-custom-content > ul > li {
+	list-style-type: none;
+	border: 1px solid #dee2de;
+
+	padding: 2.5% 2.5% 2.5% 5%;
+}
+.list-group-custom-content-heading {
+	float: left;
+}
+.list-group-custom-content-time {
+	float: right;
+	font-size: 80%;
+}
+.list-group-custom-content-container::after {
+	content: '';
+	clear: both;
+	display: table;
+}
