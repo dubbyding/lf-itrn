@@ -459,7 +459,7 @@ div.table-traverse > button:disabled {
 }
 .card-section {
 	float: left;
-	margin: 10vh 2vw 0 0;
+	margin: 10vh 2vw 2.5% 0;
 }
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -477,6 +477,9 @@ div.table-traverse > button:disabled {
 .card-user {
 	float: left;
 }
+.card-user-detail {
+	padding: 5%;
+}
 .card-user-detail::after {
 	content: '';
 	clear: both;
@@ -485,10 +488,51 @@ div.table-traverse > button:disabled {
 .card-user-right {
 	float: right;
 }
-.interact-card-section {
-}
+/* .interact-card-section {
+} */
 .interact-float {
 	float: left;
 	width: 33.33%;
 	border-bottom: 2px solid #ddd;
+}
+.comment-section-card {
+	float: left;
+	width: 30%;
+	padding: 10% 0 10% 20%;
+}
+.comment-input {
+	padding: 10% 50%;
+}
+.second-card-section {
+	position: relative;
+	height: 80px;
+}
+.play-section {
+	position: absolute;
+	top: 1em;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	text-align: center;
+}
+.count {
+	float: left;
+}
+div.count > span {
+	padding: 0 0 5% 5%;
+}
+.final-card-header {
+	padding: 5% 0 5% 5%;
+}
+.final-card-header > div {
+	margin-top: 2%;
+}
+.final-card-header > div:first-child {
+	background-color: #28a745;
+	width: 20%;
+	border-radius: 20px;
+	padding: 2% 0 2% 5%;
+}
+.final-section {
+	margin: 0 0 20% 0;
 }
