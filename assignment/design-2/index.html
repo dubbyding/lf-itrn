@@ -333,11 +333,196 @@ This line rendered as italicized text.
 				<div class="section-title">
 					<h1>Forms</h1>
 				</div>
+				<section class="form-area">
+					<article class="components form-section-article">
+						<h1 class="form-compoment-head">Components</h1>
+						<ul class="form-list" style="list-style-type: none">
+							<li>Color</li>
+							<li>Typography</li>
+							<li>Button</li>
+							<li id="forms-bg-color">Forms</li>
+							<li>List Group</li>
+							<li>Table</li>
+							<li>Card</li>
+						</ul>
+					</article>
+					<article class="component-form form-section-article">
+						<form>
+							<label for="input"><h2>Input</h2></label><br />
+							<input
+								type="text"
+								id="input-form"
+								placeholder="Placeholder"
+								class="input-area"
+							/><br />
+							<label for="menu"><h2>Select Menu</h2></label><br />
+							<select id="menu" name="menu" class="input-area">
+								<option value="Select-Menu" hidden>Select Menu</option>
+								<option value="Nepal">Nepal</option>
+								<option value="Japan">Japan</option></select
+							><br />
+							<label for="text-area"><h2>Textarea</h2></label><br />
+							<textarea
+								id="text-area"
+								name="message"
+								placeholder="Write your message here"
+								class="input-area"
+							></textarea
+							><br />
+							<label><h2>Checkboxes</h2></label>
+							<div class="form-check-area-container">
+								<div class="form-check-area vertical-form-check-area">
+									<h3>Checkboxes</h3>
+									<div class="single-check-button">
+										<input
+											type="checkbox"
+											id="def-1"
+											name="def-1"
+											value="def-1"
+										/>
+										<label for="def-1">Default Checkbox</label><br />
+									</div>
+									<div class="single-check-button">
+										<input
+											type="checkbox"
+											id="def-2"
+											name="def-2"
+											value="def-2"
+											checked
+										/>
+										<label for="def-2">Default Checkbox</label><br />
+									</div>
+									<div class="single-check-button">
+										<input
+											type="checkbox"
+											id="def-3"
+											name="def-3"
+											value="def-3"
+											disabled
+										/>
+										<label for="def-3">Default (disabled)</label><br />
+									</div>
+								</div>
+								<div class="form-check-area">
+									<h3>Checkboxes Inline</h3>
+									<div class="single-check-button single-check-button-float">
+										<input
+											type="checkbox"
+											id="def-4"
+											name="def-4"
+											value="def-4"
+										/>
+										<label for="def-4">Default Checkbox</label>
+									</div>
+									<div class="single-check-button single-check-button-float">
+										<input
+											type="checkbox"
+											id="def-5"
+											name="def-5"
+											value="def-5"
+											checked
+										/>
+										<label for="def-5">Default Checkbox</label>
+									</div>
+									<div class="single-check-button single-check-button-float">
+										<input
+											type="checkbox"
+											id="def-6"
+											name="def-6"
+											value="def-6"
+											disabled
+										/>
+										<label for="def-6">Default (disabled)</label>
+									</div>
+								</div>
+							</div>
+							<label><h2>Radios</h2></label>
+							<div class="form-check-area-container">
+								<div class="form-check-area vertical-form-check-area">
+									<h3>Radios</h3>
+									<div class="single-check-button">
+										<input type="radio" id="def-1" name="def-1" value="def-1" />
+										<label for="def-1">Default Radio</label><br />
+									</div>
+									<div class="single-check-button">
+										<input
+											type="radio"
+											id="def-2"
+											name="def-2"
+											value="def-2"
+											checked
+										/>
+										<label for="def-2">Default Radio</label><br />
+									</div>
+									<div class="single-check-button">
+										<input
+											type="radio"
+											id="def-3"
+											name="def-3"
+											value="def-3"
+											disabled
+										/>
+										<label for="def-3">Disabled radio</label><br />
+									</div>
+								</div>
+								<div class="form-check-area">
+									<h3>Radios Inline</h3>
+									<div class="single-check-button single-check-button-float">
+										<input type="radio" id="def-4" name="def-4" value="def-4" />
+										<label for="def-4">Default Radio</label>
+									</div>
+									<div class="single-check-button single-check-button-float">
+										<input
+											type="Radio"
+											id="def-5"
+											name="def-5"
+											value="def-5"
+											checked
+										/>
+										<label for="def-5">Default radio</label>
+									</div>
+									<div class="single-check-button single-check-button-float">
+										<input
+											type="checkbox"
+											id="def-6"
+											name="def-6"
+											value="def-6"
+											disabled
+										/>
+										<label for="def-6">Disabled Radio</label>
+									</div>
+								</div>
+							</div>
+							<label><h2>Validation</h2></label>
+							<label for="input-success">Input Success</label><br />
+							<input
+								type="text"
+								id="input-sucess"
+								class="input-area valid"
+							/><br />
+							<label for="input-error">Input Error</label><br />
+							<input
+								type="text"
+								id="input-error"
+								class="input-area valid"
+							/><br />
+						</form>
+					</article>
+				</section>
 			</section>
 			<!-- Section-5 -->
 			<section>
 				<div class="section-title">
 					<h1>List Group</h1>
+				</div>
+				<div>
+					<section class="list-group-example">
+						<h1>Basic example</h1>
+					</section>
+
+					<section class="list-group-custom-content">
+						<h1>Custom content</h1>
+					</section>
 				</div>
 			</section>
 			<!-- Section-6 -->

@@ -108,8 +108,9 @@ div.section-title > h1 {
 .subheader-body {
 	margin: 4% 0 1.5% 0;
 }
-div.subheader-body h1 {
-	font-size: 3vh;
+div.subheader-body h1,
+.form-compoment-head {
+	font-size: 4vh;
 }
 div.subheader-body::after {
 	content: '';
@@ -290,4 +291,83 @@ li[class*='nav-border'] {
 	background-color: #6c757d;
 	border-color: #6c757d;
 	color: white;
+}
+
+/*
+	Forms
+*/
+.form-area {
+	width: 100%;
+}
+.form-area::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+.components {
+	width: 35%;
+}
+.form-section-article {
+	float: left;
+}
+ul[class*='form-list'] {
+	margin: 10% 0 0 0;
+}
+ul[class*='form-list'] > li {
+	border: 1px solid #dee2e6;
+	margin-right: 20%;
+	padding: 2.5% 0 2.5% 2.5%;
+}
+#forms-bg-color {
+	color: white;
+	background-color: #7749f8;
+}
+/*
+	Form body section
+*/
+label > h2 {
+	margin: 5vh 0 2.5vh 0;
+}
+.input-area {
+	border: 2px solid #dee2e6;
+	border-radius: 5px;
+	padding: 2.5% 20px;
+	width: 25vw;
+}
+#text-area {
+	height: 15vh;
+	resize: none;
+}
+input:disabled + label {
+	color: #ccc;
+}
+.form-check-area-container::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+.form-check-area {
+	float: left;
+}
+.vertical-form-check-area {
+	margin-right: 2.5vw;
+}
+.single-check-button {
+	padding: 2vh 0;
+}
+.single-check-button > input {
+	accent-color: #7749f8;
+}
+.single-check-button-float {
+	float: left;
+	padding-right: 1.5vw;
+}
+.valid {
+	margin: 1.5vh 0.5vw 1.5vh 0.5vw;
+}
+#input-sucess {
+	border-color: #28a745;
+}
+#input-error {
+	border-color: #dc3545;
 }
