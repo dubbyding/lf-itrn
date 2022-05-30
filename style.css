@@ -1,10 +1,11 @@
 body {
-	/* background-image: url('./images/cover.png'); */
+	background-image: url('./images/cover.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 a {
 	text-decoration: none;
+	color: blue;
 }
 .center {
 	margin-left: auto;
@@ -21,4 +22,39 @@ section.center > h1 {
 
 .float-left {
 	float: left;
+}
+.table {
+	background-color: rgba(96, 85, 85);
+	border-radius: 20px;
+	color: white;
+}
+.table-content {
+	text-align: center;
+}
+.table-content::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+.table-row {
+	margin: 0 4%;
+}
+.table-row > h1,
+.table-row > p {
+	margin: 50px 0;
+}
+.btn {
+	padding: 16px 30px;
+	border-radius: 4px;
+}
+.btn.primary {
+	background: #4e42d9;
+	color: #ffffff;
+}
+
+.btn.secondary {
+	padding: 16px 30px;
+	background: #ffffff;
+	border-radius: 4px;
+	color: #4e42d9;
 }
