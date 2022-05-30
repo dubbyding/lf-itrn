@@ -102,6 +102,15 @@
 	border-radius: 20px;
 	position: relative;
 }
+.rocket {
+	background-color: #e2f3ff;
+}
+.game {
+	background-color: #fdfbda;
+}
+.ai {
+	background-color: #ffe7fb;
+}
 .working-area-background > img {
 	width: 41%;
 	position: absolute;
