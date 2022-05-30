@@ -16,10 +16,11 @@
 .nav-list-content-contact {
 	padding-right: 40px;
 }
-.hero-body {
-	margin: 12px 8vw;
+.body {
+	position: relative;
+	margin: 12px 8vw 60px 8vw;
 }
-.hero-body::after {
+.body::after {
 	content: '';
 	clear: both;
 	display: table;
@@ -57,4 +58,61 @@
 }
 .hero-area-btn > div.float-left:not(:last-child) {
 	margin: 0 12px 0 0;
+}
+
+.header-area {
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin: 0 0 40px 0;
+}
+.header-area::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+.working-section-head {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 177.9%;
+	text-align: center;
+}
+.content-of-work::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+.working-area {
+	width: 24%;
+}
+.working-area:not(:last-child) {
+	margin: 0 1% 0 0;
+}
+.working-area-icon {
+	width: 100%;
+	margin: 0 0 24px 0;
+}
+.working-area-background {
+	margin-left: auto;
+	margin-right: auto;
+	width: 31.92%;
+	aspect-ratio: 1/1;
+	background-color: #fff2f2;
+	border-radius: 20px;
+	position: relative;
+}
+.working-area-background > img {
+	width: 41%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.working-area-text {
+	text-align: center;
+}
+
+.blog-section {
+	padding: 72px 8vw 60px 8vw;
 }

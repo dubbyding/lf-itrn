@@ -28,3 +28,39 @@ div.heading-logo > span {
 .btn:hover {
 	cursor: pointer;
 }
+
+.blog-body {
+	width: 100%;
+	background-color: #f8f8f8;
+	margin-top: 12px;
+}
+.Blog-heading {
+	text-align: center;
+	width: 38.81%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.Blog-heading > h1 {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 140%; /* identical to box height, or 45px */
+
+	letter-spacing: 0.01em;
+
+	/* Body / Title */
+
+	color: #3b3950;
+	margin-bottom: 8px;
+}
+.Blog-heading > p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	/* or 24px */
+
+	text-align: center;
+	letter-spacing: 0.01em;
+	color: #797979;
+}
