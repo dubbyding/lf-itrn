@@ -37,8 +37,7 @@ div.heading-logo > span {
 .Blog-heading {
 	text-align: center;
 	width: 38.81%;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 0 auto 40px auto;
 }
 .Blog-heading > h1 {
 	font-style: normal;
@@ -63,4 +62,47 @@ div.heading-logo > span {
 	text-align: center;
 	letter-spacing: 0.01em;
 	color: #797979;
+}
+.date-blog-area {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 140%;
+	color: #797979;
+	margin: 12px 0;
+}
+.main-blog-area > h1 {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 140%;
+	/* or 25px */
+
+	letter-spacing: 0.01em;
+	color: #3b3950;
+}
+.main-blog-area > p {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	/* or 24px */
+
+	letter-spacing: 0.01em;
+
+	/* Body / Paragraph */
+
+	color: #797979;
+}
+.copyright {
+	background-color: #23222f;
+}
+section.copyright > div {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 140%;
+	/* identical to box height, or 20px */
+
+	color: rgba(255, 255, 255, 0.8);
 }
