@@ -39,3 +39,9 @@ COPY ./index.html /usr/share/nginx/html/index.html
 ### Run docker file
 
 sudo docker build -t "name":v1 -f "filename"
+
+## Composing
+sudo docker compose up -d
+
+# Github link
+github.com/deesirouss/laravelDemo
