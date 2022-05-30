@@ -1,5 +1,22 @@
+body {
+	background-image: url('./images/cover.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 .center {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+}
+
+section.center > h1 {
+	background-color: rgba(96, 85, 85, 0.8);
+	border-radius: 20px;
+	margin: 5% 30% 2.5% 30%;
+	color: white;
+}
+
+table.center > tr td,
+th {
+	padding: 2%;
 }

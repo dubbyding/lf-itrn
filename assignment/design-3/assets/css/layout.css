@@ -1,0 +1,60 @@
+.heading-area::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+.heading-logo {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 30px;
+	padding: 32px 0 0 40px;
+}
+.nav-list-content {
+	list-style-type: none;
+	padding: 45px 24px;
+}
+.nav-list-content-contact {
+	padding-right: 40px;
+}
+.hero-body {
+	margin: 12px 8vw;
+}
+.hero-body::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+.hero-text-content {
+	padding: 54px 8vw 0 0;
+	width: 34vw;
+}
+.hero-text-content > h1 {
+	width: 100%;
+	margin: 0 0 12px 0;
+}
+.hero-text-content > p {
+	width: 90.8%;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #797979;
+}
+.hero-image {
+	width: 40vw;
+}
+.hero-image-css {
+	width: 100%;
+}
+
+.hero-area-btn {
+	margin: 48px 0 0 0;
+}
+.hero-area-btn::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+.hero-area-btn > div.float-left:not(:last-child) {
+	margin: 0 12px 0 0;
+}
