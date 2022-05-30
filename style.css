@@ -1,7 +1,10 @@
 body {
-	background-image: url('./images/cover.png');
+	/* background-image: url('./images/cover.png'); */
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+a {
+	text-decoration: none;
 }
 .center {
 	margin-left: auto;
@@ -16,7 +19,6 @@ section.center > h1 {
 	color: white;
 }
 
-table.center > tr td,
-th {
-	padding: 2%;
+.float-left {
+	float: left;
 }
