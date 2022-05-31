@@ -12,7 +12,7 @@ window.onload = () => {
 
 window.onresize = () => {
 	let nav = document.getElementById('navi');
-	if (window.innerWidth > 576) {
+	if (window.innerWidth > 1200) {
 		nav.style.display = 'block';
 	} else {
 		nav.style.display = 'none';

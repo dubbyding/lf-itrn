@@ -3,6 +3,18 @@
 }
 .nav-toggle {
 	display: none;
+	float: right;
+	text-align: right;
+	width: 50%;
+}
+.nav-toggle > img {
+	width: 5.6%;
+	text-align: right;
+	background-color: white;
+	padding: 6px 0;
+}
+.nav-toggle > img:hover {
+	cursor: pointer;
 }
 .header {
 	width: 100%;
@@ -11,6 +23,7 @@
 .small-screen::after,
 .nav-area::after,
 .navigation::after,
+.hero-body::after,
 .hero-btn::after {
 	content: '';
 	clear: both;
