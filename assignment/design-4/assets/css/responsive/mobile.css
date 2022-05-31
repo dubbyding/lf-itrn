@@ -73,4 +73,14 @@
 	.hero-btn > div:not(:last-child) {
 		margin-right: 12px;
 	}
+	.main-working-section-container {
+		padding: 0 8.33%;
+	}
+	.header-area {
+		margin: 0 0 62px 0;
+	}
+	.working-area {
+		float: none;
+		padding: 10px 0;
+	}
 }
