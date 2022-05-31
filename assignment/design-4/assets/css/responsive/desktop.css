@@ -20,6 +20,7 @@
 	.nav-list-content {
 		float: left;
 		padding-left: 48px;
+		border: none;
 	}
 	.hero-image {
 		margin: 0 8.33% 0 0;

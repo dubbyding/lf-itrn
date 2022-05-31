@@ -16,13 +16,13 @@
 		display: none;
 	}
 	.nav-area {
+		width: 100%;
 		padding: 32px 2.77% 32px 0;
-		display: table;
-		margin: 0 auto;
+		text-align: center;
 	}
 	.nav-list-content {
-		float: left;
-		padding-left: 48px;
+		padding: 24px 0;
+		border-bottom: 1px solid lightgray;
 	}
 	.hero-image {
 		margin: 50px 4.66% 0 0;
