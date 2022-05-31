@@ -84,6 +84,43 @@
 	.working-area {
 		float: left;
 		width: 50%;
+	}
+	.working-area:nth-child(even) {
 		padding-bottom: 50px;
+	}
+	.blog-body {
+		margin-top: 22px;
+	}
+	.blog-section {
+		padding: 50px 4vw 72px 4vw;
+	}
+	.blog-content {
+		margin-bottom: 52px;
+	}
+	.Blog-heading {
+		width: 100%;
+		margin: 0 auto 0 auto;
+	}
+
+	.blog-view {
+		width: 42vw;
+		float: left;
+	}
+	.blog-view:not(:last-child) {
+		margin: 72px 2vw auto 2vw;
+	}
+	.blog-view:nth-child(even) {
+		padding-bottom: 50px;
+	}
+	.main-blog-area > h1 {
+		margin-bottom: 8px;
+	}
+	.image-blog-area,
+	.image-blog-area > img {
+		width: 100%;
+	}
+	.blog-button > div {
+		width: fit-content;
+		margin: 0 auto;
 	}
 }

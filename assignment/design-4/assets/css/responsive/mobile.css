@@ -83,4 +83,36 @@
 		float: none;
 		padding: 10px 0;
 	}
+	.blog-body {
+		margin-top: 22px;
+	}
+	.blog-section {
+		padding: 50px 4vw 72px 4vw;
+	}
+	.blog-content {
+		margin-bottom: 72px;
+	}
+	.Blog-heading {
+		width: 100%;
+		margin: 0 auto 72px auto;
+	}
+
+	.blog-view {
+		width: 100%;
+		float: none;
+	}
+	.blog-view:not(:last-child) {
+		margin: 0 0 50px 0;
+	}
+	.main-blog-area > h1 {
+		margin-bottom: 8px;
+	}
+	.image-blog-area,
+	.image-blog-area > img {
+		width: 100%;
+	}
+	.blog-button > div {
+		width: fit-content;
+		margin: 0 auto;
+	}
 }
