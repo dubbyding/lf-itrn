@@ -6,7 +6,9 @@
 	background: #4e42d9;
 	color: #ffffff;
 }
-
+.btn.primary:hover {
+	background: #5227cc;
+}
 .btn.secondary {
 	background: rgba(78, 66, 217, 0.18);
 	color: #4e42d9;
