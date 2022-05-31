@@ -1,0 +1,35 @@
+@media screen and (max-width: 384px) {
+	.heading-area {
+		width: 100%;
+	}
+	.heading-logo,
+	.heading-nav {
+		float: none;
+		text-align: center;
+	}
+	.nav-list-content {
+		display: block;
+		float: none;
+		padding: 20px;
+		border-bottom: 2px solid lightgray;
+	}
+}
+@media screen and (max-width: 720px) {
+	.heading-area {
+		width: 100%;
+	}
+	.heading-logo,
+	.heading-nav {
+		float: none;
+		text-align: center;
+	}
+	.heading-nav {
+		margin: 0 auto;
+		text-align: center;
+	}
+	.nav-list::after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+}
