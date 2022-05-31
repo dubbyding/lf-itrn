@@ -21,15 +21,14 @@
 	.heading-logo,
 	.heading-nav {
 		float: none;
-		text-align: center;
+		display: table;
+		margin: 0 auto;
+		padding: 22px 0 0 0px;
 	}
 	.heading-nav {
-		margin: 0 auto;
 		text-align: center;
 	}
-	.nav-list::after {
-		content: '';
-		clear: both;
-		display: table;
+	.nav-list {
+		margin: 0 auto;
 	}
 }
