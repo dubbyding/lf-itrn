@@ -3,8 +3,10 @@ window.onload = () => {
 	let nav = document.getElementById('navi');
 	v.onclick = () => {
 		if (nav.style.display == 'block') {
+			v.src = './assets/images/bars-solid.svg';
 			nav.style.display = 'none';
 		} else {
+			v.src = './assets/images/x.png';
 			nav.style.display = 'block';
 		}
 	};
