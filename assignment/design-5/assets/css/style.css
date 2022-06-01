@@ -48,3 +48,76 @@
 
 	color: #28a745;
 }
+.body {
+	padding: 0 11%;
+}
+.section-heading {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	letter-spacing: -0.02em;
+
+	/* Heading/Title Color */
+
+	color: #152536;
+	border-bottom: 1px solid #d9dde2;
+}
+.color-section-heading {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 39px;
+}
+.color-detail-heading {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+
+	/* Dark */
+
+	color: #343a40;
+}
+.color-detail-hex {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	/* identical to box height */
+
+	/* Body Text Color */
+
+	color: #6b7176;
+}
+.tabs-name {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	/* identical to box height, or 150% */
+
+	/* Primary/Color */
+
+	color: #7749f8;
+	border: 1px solid black;
+	border-radius: 4px 4px 0 0;
+}
+.current-active-tab {
+	color: #6c757d;
+	border-bottom: 1px solid white;
+}
+.empty-tab {
+	border-bottom: 1px solid black;
+}
+.tab-content {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	/* or 175% */
+
+	/* Body Text / Base Color */
+
+	color: #68717a;
+}

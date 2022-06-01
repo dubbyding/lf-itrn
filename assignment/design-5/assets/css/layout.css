@@ -29,3 +29,50 @@
 	padding: 11px 0 12px 0;
 	width: 31%;
 }
+.section-heading {
+	padding: 32px 0;
+}
+.color-section-heading {
+	padding: 52px 0 27px 0;
+}
+.color-area {
+	width: 100%;
+}
+.color-box {
+	width: 14%;
+	float: left;
+}
+.color-box:not(:first-child) {
+	margin-left: 2%;
+}
+.color-class {
+	width: 100%;
+	padding: 36px 0;
+	border-radius: 8px;
+}
+.color-detail {
+	margin: 13px 0 0 0;
+}
+.color-detail-hex {
+	margin: 4px 0 0 0;
+}
+.tabs-section-body {
+	width: 55%;
+	margin-top: 24px;
+}
+.actual-tabs {
+	width: 100%;
+}
+.tabs-name {
+	float: left;
+	padding: 9px 29px 10px 26px;
+}
+.empty-tab {
+	float: none;
+	overflow: hidden;
+	padding: 11.5px 0;
+}
+.tab-content {
+	width: 90%;
+	margin-top: 17px;
+}
