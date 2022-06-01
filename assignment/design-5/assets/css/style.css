@@ -26,6 +26,10 @@
 	color: #5227cc;
 	background: #ffffff;
 }
+.btn.deactivate {
+	color: #abb5be;
+	background: #ffffff;
+}
 
 .clearfix::after {
 	content: '';
@@ -295,4 +299,14 @@
 }
 .validation-label-error {
 	border-color: #dc3545;
+}
+.table-section-table {
+	width: 100%;
+	margin-top: 54px;
+}
+tr.table-section-row-body {
+	border-bottom: 2px solid #dee2e6;
+}
+tr.table-section-row-body:nth-child(odd) {
+	background: #f8f9fa;
 }
