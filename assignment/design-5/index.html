@@ -104,7 +104,7 @@
 			<div class="button-section">
 				<div class="section-heading">Buttons</div>
 				<div class="button-section-heading">Primary</div>
-				<table>
+				<table class="button-table">
 					<thead>
 						<tr>
 							<th>&nbsp;</th>
@@ -140,6 +140,200 @@
 					</tbody>
 				</table>
 			</div>
+			<!--
+				Forms Section:
+					Estimated time: 30 mins
+					Actual time: 1hr 42mins
+			-->
+			<div class="form-section">
+				<div class="section-heading">Forms</div>
+				<div class="form-container clearfix">
+					<div class="form-components">
+						<div class="components-header">Components</div>
+						<ul class="components-list">
+							<li class="component-elements">Color</li>
+							<li class="component-elements">Typography</li>
+							<li class="component-elements">Buttons</li>
+							<li class="component-elements active-list">Forms</li>
+							<li class="component-elements">List Group</li>
+							<li class="component-elements">Table</li>
+							<li class="component-elements">Card</li>
+						</ul>
+					</div>
+					<div class="actual-form">
+						<form class="from-page-area">
+							<div class="input-element">
+								<label for="input" class="form-labels"> Input </label>
+								<input
+									type="text"
+									name="text"
+									id="input"
+									placeholder="Placeholder"
+									class="input-label-width"
+								/>
+							</div>
+							<div class="input-element">
+								<label for="menu" class="form-labels">Select Menu</label>
+								<select
+									id="menu"
+									name="menu"
+									class="input-label-width input-area"
+								>
+									<option value="Select-Menu" hidden>Select Menu</option>
+									<option value="Nepal">Nepal</option>
+									<option value="Japan">Japan</option>
+								</select>
+							</div>
+							<div class="input-element">
+								<label for="text-area" class="form-labels">Textarea</label>
+								<textarea
+									name="text-area"
+									id="text-area"
+									placeholder="Write your message here"
+									class="input-label-width"
+								></textarea>
+							</div>
+							<div class="input-element">
+								<div class="form-labels">Checkboxes</div>
+								<div class="selecting-area-form clearfix">
+									<div class="selecting-area-form-two">
+										<div class="small-label">Checkboxes</div>
+										<div>
+											<div class="vertical-selecting">
+												<input type="checkbox" name="check1" id="check1" />
+												<label for="check1" class="select-vertical"
+													>Default checkbox</label
+												>
+											</div>
+											<div class="vertical-selecting">
+												<input type="checkbox" name="check2" id="check2" />
+												<label for="check2" class="select-vertical"
+													>Default checkbox</label
+												>
+											</div>
+											<div class="vertical-selecting">
+												<input type="checkbox" name="check3" id="check3" />
+												<label for="check3" class="select-vertical"
+													>Default checkbox</label
+												>
+											</div>
+										</div>
+									</div>
+									<div class="selecting-area-form-two clearfix">
+										<div class="small-label">Checkboxes Inline</div>
+										<div class="clearfix">
+											<div class="selecting-area-actual">
+												<input type="checkbox" name="check11" id="check11" />
+												<label for="check11" class="inline-select"
+													>Default checkbox</label
+												>
+											</div>
+											<div class="selecting-area-actual">
+												<input type="checkbox" name="check12" id="check12" />
+												<label for="check12" class="inline-select"
+													>Default checkbox</label
+												>
+											</div>
+											<div class="selecting-area-actual">
+												<input type="checkbox" name="check13" id="check13" />
+												<label for="check13" class="inline-select"
+													>Default checkbox</label
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="input-element">
+								<div class="form-labels">Radios</div>
+								<div class="selecting-area-form clearfix">
+									<div class="selecting-area-form-two">
+										<div class="small-label">Radioes</div>
+										<div>
+											<div class="vertical-selecting">
+												<input type="radio" name="radio1" id="radio1" />
+												<label for="radio1" class="select-vertical"
+													>Default radio</label
+												>
+											</div>
+											<div class="vertical-selecting">
+												<input type="radio" name="radio2" id="radio2" />
+												<label for="radio2" class="select-vertical"
+													>Default radio</label
+												>
+											</div>
+											<div class="vertical-selecting">
+												<input type="radio" name="radio3" id="radio3" />
+												<label for="radio3" class="select-vertical"
+													>Default radio</label
+												>
+											</div>
+										</div>
+									</div>
+									<div class="selecting-area-form-two clearfix">
+										<div class="small-label">Radios Inline</div>
+										<div class="clearfix">
+											<div class="selecting-area-actual">
+												<input type="radio" name="radio11" id="radio11" />
+												<label for="radio11" class="inline-select"
+													>Default radio</label
+												>
+											</div>
+											<div class="selecting-area-actual">
+												<input type="radio" name="radio12" id="radio12" />
+												<label for="radio12" class="inline-select"
+													>Default radio</label
+												>
+											</div>
+											<div class="selecting-area-actual">
+												<input type="radio" name="radio13" id="radio13" />
+												<label for="radio13" class="inline-select"
+													>Default radio</label
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="input-element">
+								<div class="form-labels">Validation</div>
+								<div class="validation-success">
+									<label for="input-success" class="validation-label"
+										>Input Success</label
+									>
+									<input
+										type="text"
+										id="input-success"
+										class="input-label-width validation-label-success"
+									/>
+								</div>
+								<div class="validation-success">
+									<label for="input-fail" class="validation-label"
+										>Input Error</label
+									>
+									<input
+										type="text"
+										id="input-error"
+										class="input-label-width validation-label-error"
+									/>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!--
+				List-Group Section:
+					Estimated Time: 20mins
+			-->
+			<!--
+				Table Section:
+					Estimated Time: 20mins
+			-->
+			<!--
+				Cards Section:
+					Estimated Time: 1hr
+			-->
 		</div>
 	</body>
 </html>

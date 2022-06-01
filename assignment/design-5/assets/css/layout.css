@@ -76,6 +76,9 @@
 	width: 90%;
 	margin-top: 17px;
 }
+.button-table {
+	margin-top: 17px;
+}
 .button-section-heading {
 	margin-top: 54px;
 	padding-bottom: 16px;
@@ -88,4 +91,63 @@ td {
 }
 .horizontal-divide-long {
 	padding-left: 11vw;
+}
+.form-container {
+	padding-top: 54px;
+}
+.form-components {
+	float: left;
+	width: 31%;
+}
+.actual-form {
+	float: left;
+	margin-left: 4.86%;
+	width: 54%;
+}
+.components-list {
+	margin-top: 35px;
+}
+.component-elements {
+	padding: 16px 0 17px 4%;
+}
+
+.input-label-width {
+	margin-top: 16px;
+}
+textarea.input-label-width {
+	padding-bottom: 70px;
+}
+.input-element:not(:first-child) {
+	margin-top: 48px;
+}
+
+.selecting-area-form-two {
+	float: left;
+
+	width: 20%;
+}
+.selecting-area-form-two.clearfix {
+	width: 80%;
+	padding-left: 8%;
+}
+.selecting-area-actual {
+	float: left;
+}
+.selecting-area-actual:not(:last-child) {
+	margin-right: 9%;
+}
+.small-label {
+	padding: 24px 0 16px 0;
+}
+.vertical-selecting {
+	padding-bottom: 14px;
+}
+.validation-success {
+	margin-top: 26px;
+}
+.validation-label-success {
+	border-color: #28a745;
+}
+.validation-label-error {
+	border-color: #dc3545;
 }

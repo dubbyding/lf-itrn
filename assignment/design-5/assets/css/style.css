@@ -173,3 +173,89 @@
 
 	color: #6b7176;
 }
+.components-header {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 34px;
+	/* identical to box height */
+
+	/* Heading/Title Color */
+
+	color: #152536;
+}
+.components-list {
+	border: 1px solid #dee2e6;
+	border-radius: 4px;
+}
+.component-elements {
+	list-style-type: none;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 17px;
+	/* identical to box height, or 100% */
+
+	/* Heading/Title Color */
+
+	color: #152536;
+}
+.component-elements:not(:last-child) {
+	border-bottom: 1px solid #dee2e6;
+}
+.active-list {
+	background: #7749f8;
+	color: #ffffff;
+}
+.form-labels {
+	display: block;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	/* identical to box height */
+
+	/* Heading/Title Color */
+
+	color: #152536;
+}
+.input-label-width {
+	width: 68%;
+	padding: 9px 0 8px 2%;
+}
+.inline-select,
+.select-vertical {
+	accent-color: #7749f8;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 12px;
+	/* identical to box height, or 100% */
+
+	/* Heading/Title Color */
+
+	color: #152536;
+}
+.small-label {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	/* identical to box height, or 131% */
+
+	/* Heading/Title Color */
+
+	color: #152536;
+}
+.validation-label {
+	display: block;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 21px;
+	/* identical to box height, or 131% */
+
+	/* Heading/Title Color */
+
+	color: #152536;
+}
