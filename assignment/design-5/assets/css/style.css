@@ -259,3 +259,40 @@
 
 	color: #152536;
 }
+.custom-content-header {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 34px;
+	/* identical to box height */
+
+	/* Heading/Title Color */
+
+	color: #152536;
+}
+.custom-content-topic-body {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+}
+.custom-content-topic-footer {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+}
+.custom-main-body-border {
+	border: 1px solid #dee2e6;
+	border-radius: 4px;
+}
+.custom-content-body:not(:last-child) {
+	border-bottom: 1px solid #dee2e6;
+}
+
+.validation-label-success {
+	border-color: #28a745;
+}
+.validation-label-error {
+	border-color: #dc3545;
+}
