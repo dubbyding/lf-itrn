@@ -198,3 +198,99 @@ textarea.input-label-width {
 	margin-left: 4px;
 	border: 1px solid #dee2e6;
 }
+.card-1 {
+	float: left;
+}
+.card-first-header-profile {
+	float: left;
+	width: 13%;
+	padding: 17px 0 17px 3%;
+}
+.card-first-header-detail {
+	float: left;
+	width: 79%;
+	padding: 10px 4%;
+}
+.card-first-header-bar {
+	float: right;
+	width: 8%;
+	padding: 24.5px 3% 24.5px 0;
+}
+
+.card-detail-detail {
+	width: 74%;
+}
+.mid-image {
+	width: 100%;
+}
+.mid-image > img {
+	width: 100%;
+}
+.reaction-icon {
+	float: left;
+	width: 33%;
+	text-align: center;
+}
+.reaction-icon-section {
+	padding: 10px 0;
+	width: 25%;
+	border-bottom: 1px solid #f2f2f2;
+}
+.comment-section {
+	padding: 10px 7%;
+}
+.card-footer-image {
+	float: left;
+	width: 16%;
+}
+.card-footer-image > img {
+	width: 100%;
+}
+.card-footer-comment {
+	float: left;
+	width: 74%;
+	margin-left: 5%;
+}
+.card-footer-comment > input {
+	padding: 6.5% 0 6.5% 5%;
+}
+.card-relative {
+	position: relative;
+}
+.card-absolute {
+	position: absolute;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+	width: 25%;
+}
+.card-last-heading {
+	padding: 10px 0 10px 3%;
+}
+.card-last-home {
+	align-items: center;
+	padding: 5px 3% 5px 3%;
+	width: 22%;
+}
+.card-last-name {
+	margin: 5px 0;
+}
+.final-card-comment {
+	margin: 0 1%;
+	width: 98%;
+	padding: 16px 3%;
+}
+.final-commentor {
+	width: 10%;
+	float: left;
+}
+.final-commentor-name {
+	float: left;
+	padding: 5px 1.2%;
+}
+.final-commentor-msg {
+	width: 7%;
+	padding: 5px 0;
+	margin-left: 5.2%;
+}

@@ -310,3 +310,71 @@ tr.table-section-row-body {
 tr.table-section-row-body:nth-child(odd) {
 	background: #f8f9fa;
 }
+.cards-section {
+	padding-bottom: 4vw;
+}
+.cards-container {
+	width: 86%;
+	margin-top: 68px;
+}
+.card-1 {
+	width: 29%;
+	background: #ffffff;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+}
+.card-1:not(:last-child) {
+	margin-right: 5%;
+}
+.card-detail-name {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	/* identical to box height */
+
+	color: #000000;
+}
+.card-detail-detail {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+
+	/* Gray 3 */
+
+	color: #828282;
+}
+.card-footer-comment > input {
+	border: 1px solid #e0e0e0;
+	border-radius: 16px;
+}
+.card-2-centerlize {
+	display: table;
+	margin: 50px auto 28px auto;
+	text-align: center;
+}
+.card-last-home {
+	background: #27ae60;
+	border-radius: 8px;
+}
+.card-last-name {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	/* identical to box height */
+
+	color: #000000;
+}
+.card-last-by {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	/* identical to box height */
+
+	/* Gray 2 */
+
+	color: #4f4f4f;
+}
