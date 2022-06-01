@@ -1,0 +1,31 @@
+.header {
+	padding: 18px 11% 19px 11%;
+}
+.header-logo {
+	float: left;
+	padding: 11px 0 13px 1.26%;
+}
+.navigation {
+	float: left;
+	margin-left: 5.4%;
+	padding: 16px 0;
+	width: 41%;
+}
+
+.navigation-list-content:not(:last-child) {
+	padding-right: 4.14%;
+}
+.header-form {
+	float: right;
+	width: 20%;
+}
+.header-input-area {
+	width: 67%;
+	padding: 12px 0 12px 6%;
+	float: left;
+}
+.header-button-area {
+	margin-left: 0.36%;
+	padding: 11px 0 12px 0;
+	width: 31%;
+}

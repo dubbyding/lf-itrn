@@ -1,0 +1,50 @@
+.clearfix::after {
+	content: '';
+	clear: both;
+	display: table;
+}
+.header-logo {
+	font-style: normal;
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 24px;
+
+	color: #000000;
+}
+.navigation-list-content {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	/* identical to box height, or 114% */
+
+	/* Secondary/color */
+
+	color: #6c757d;
+}
+.header-input-area {
+	border: 1px solid #dee2e6;
+	border-radius: 4px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	/* identical to box height */
+
+	/* Secondary/Light Color */
+
+	color: #abb5be;
+}
+.header-button-area {
+	border: 1px solid #28a745;
+	border-radius: 4px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 14px;
+	/* identical to box height */
+
+	/* /Status Color / Success */
+
+	color: #28a745;
+}
