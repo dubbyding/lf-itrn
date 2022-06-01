@@ -76,3 +76,16 @@
 	width: 90%;
 	margin-top: 17px;
 }
+.button-section-heading {
+	margin-top: 54px;
+	padding-bottom: 16px;
+}
+td {
+	padding: 11.5px 0;
+}
+.horizontal-divide-small {
+	padding-right: 5vw;
+}
+.horizontal-divide-long {
+	padding-left: 11vw;
+}

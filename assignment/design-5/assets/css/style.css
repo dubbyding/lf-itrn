@@ -1,3 +1,32 @@
+.btn {
+	padding: 10px 16px;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	border: 1px solid #7749f8;
+	border-radius: 4px;
+}
+.btn.primary,
+.btn.outline.hover {
+	background: #7749f8;
+	color: #ffffff;
+}
+.btn.primary.hover,
+.btn.primary.focus {
+	background: #5227cc;
+	color: #ffffff;
+}
+.btn.primary.foucs {
+	background: #5227cc;
+	color: #ffffff;
+}
+.btn.outline {
+	color: #5227cc;
+	background: #ffffff;
+}
+
 .clearfix::after {
 	content: '';
 	clear: both;
@@ -100,7 +129,7 @@
 	/* Primary/Color */
 
 	color: #7749f8;
-	border: 1px solid black;
+	border: 1px solid #dee2e6;
 	border-radius: 4px 4px 0 0;
 }
 .current-active-tab {
@@ -108,7 +137,7 @@
 	border-bottom: 1px solid white;
 }
 .empty-tab {
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid #dee2e6;
 }
 .tab-content {
 	font-style: normal;
@@ -120,4 +149,27 @@
 	/* Body Text / Base Color */
 
 	color: #68717a;
+}
+.button-section-heading {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 29px;
+	/* identical to box height */
+
+	/* Heading/Title Color */
+
+	color: #152536;
+	border-bottom: 1px solid #dee2e6;
+}
+.table-heading {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 28px;
+	/* identical to box height, or 175% */
+
+	/* Body Text Color */
+
+	color: #6b7176;
 }
