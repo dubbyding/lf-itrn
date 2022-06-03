@@ -10,4 +10,5 @@
 .btn.btn--primary:hover {
 	background: #262592;
 	color: white;
+	cursor: pointer;
 }

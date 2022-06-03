@@ -794,8 +794,173 @@
 }
 .contact__footer {
 	position: absolute;
-	top: 50%;
+	top: 10%;
 	left: 50%;
 	width: 81.25%;
+	transform: translate(-50%, -80%);
+	padding: 57px 0 56px 0;
+	border-radius: 30px;
+	background-color: #fff;
+	filter: drop-shadow(0px 10px 100px rgba(0, 0, 0, 0.24));
+}
+.footer__email {
+	float: left;
+	width: 50%;
+	border-right: 1px solid #6c6c72;
+	padding-left: 8.54%;
+}
+.footer__contact__icon {
+	float: left;
+	width: 17%;
+	aspect-ratio: 1/1;
+	margin-top: 8px;
+	padding: 5.12%;
+	background-color: #5956e9;
+	border-radius: 50%;
+	position: relative;
+}
+.footer__email__icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
 	transform: translate(-50%, -50%);
+}
+.footer__email__icon path {
+	fill: white;
+}
+.footer__email__id {
+	float: left;
+	margin-top: 46px;
+	margin-left: 3%;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 38px;
+	/* identical to box height, or 150% */
+
+	text-transform: lowercase;
+
+	/* Black */
+
+	color: #232233;
+}
+.main__footer {
+	padding: 248px 9.375% 0 9.375%;
+}
+.footer__copyright {
+	border-top: 1px solid #ffffff;
+	padding: 18px 0;
+	text-align: center;
+	width: 81.25%;
+	margin: 0 auto;
+}
+.footer__logo__area {
+	width: 28%;
+	float: left;
+}
+.footer__logo {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 31.25px;
+	line-height: 47px;
+	/* identical to box height, or 151% */
+
+	text-transform: uppercase;
+
+	/* White */
+
+	color: #ffffff;
+}
+.footer__logo__detail {
+	margin-top: 1px;
+	margin-bottom: 38px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	/* or 150% */
+
+	/* White */
+
+	color: #ffffff;
+}
+footer .team__icon path {
+	fill: white;
+}
+.quicklink {
+	float: left;
+	margin-left: 5.64%;
+}
+.quick__header {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 38px;
+	/* identical to box height, or 150% */
+
+	text-transform: uppercase;
+
+	/* White */
+
+	color: #ffffff;
+}
+.quicklink > p {
+	margin: 12px 0;
+}
+.quicklink > p > a {
+	color: white;
+}
+.quicklink > p > a:hover {
+	color: lightgray;
+}
+.news__letter {
+	float: left;
+	margin-left: 21%;
+	width: 31%;
+}
+.letter__art {
+	width: 100%;
+}
+.letter__header {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 38px;
+	/* identical to box height, or 150% */
+
+	text-transform: uppercase;
+
+	/* White */
+
+	color: #ffffff;
+}
+.letter__body {
+	margin-top: 11px;
+	width: 80%;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	/* or 150% */
+
+	/* White */
+
+	color: #ffffff;
+}
+.letter__form {
+	margin-top: 33px;
+	width: 100%;
+}
+.letter__from__input {
+	width: 100%;
+	padding: 13px 0 13px 4.87%;
+	background: #ffffff;
+	border-radius: 4px;
+	position: relative;
+}
+.letter__sub {
+	position: absolute;
+	margin-left: -3.65%;
+	border-radius: 4px;
+	border: 0px solid #fff;
 }
