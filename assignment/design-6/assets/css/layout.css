@@ -23,8 +23,8 @@
 	transition: 0.2s ease;
 	border-radius: 20%;
 }
-.info__icon:hover {
-	background: #262592;
+.info__icon:hover path {
+	fill: #262592;
 }
 .info__content {
 	font-style: normal;
@@ -407,12 +407,215 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	padding: 26px;
+	padding: 20px;
 	border-radius: 50%;
-	border: 2px solid rgba(255, 255, 255, 0.6);
+	border: 5px solid rgba(255, 255, 255, 0.6);
 	background-color: rgba(255, 255, 255, 0.6);
 }
 .video__image_play:hover {
 	background-color: rgba(255, 255, 255, 0.8);
 	cursor: pointer;
+}
+.about__team {
+	padding: 283px 9.375% 120px 9.375%;
+}
+.about__team__detail {
+	text-align: center;
+	width: 51.36%;
+	margin: 0 auto;
+}
+.about__team__heading {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 31.25px;
+	line-height: 47px;
+	/* identical to box height, or 151% */
+
+	text-transform: uppercase;
+
+	/* Black */
+
+	color: #232233;
+}
+.about__team__body {
+	margin-top: 23px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	/* or 150% */
+
+	/* Gray ( Paragraph ) */
+
+	color: #6c6c72;
+}
+.team__image__section {
+	margin-top: 60px;
+}
+.team__card {
+	width: 31%;
+	float: left;
+	/* White */
+
+	background: #ffffff;
+	/* Effect-1 */
+
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	transition: 2s ease;
+}
+.team__card:hover {
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+}
+.team__card:not(:last-child) {
+	margin-right: 2.56%;
+}
+
+.team__image {
+	background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%235956E9FF' stroke-width='12' stroke-dasharray='60%25%2c 18%25' stroke-dashoffset='86' stroke-linecap='butt'/%3e%3c/svg%3e");
+	border-radius: 100px;
+	width: 53%;
+	aspect-ratio: 1/1;
+	padding: 11px;
+	margin: 29px auto 0 auto;
+}
+.team__image:hover {
+	animation-name: rotate;
+	animation-duration: 2s;
+}
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotate-anti {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
+}
+.team__image__actual {
+	width: 100%;
+}
+.team__image__actual:hover {
+	animation-name: rotate-anti;
+	animation-duration: 2s;
+}
+.team__detail {
+	text-align: center;
+	margin-top: 66px;
+}
+.team__name {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 31.25px;
+	line-height: 47px;
+	/* identical to box height, or 151% */
+
+	text-transform: uppercase;
+
+	/* Black */
+
+	color: #232233;
+}
+.team__job {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 30px;
+	/* identical to box height, or 150% */
+
+	text-transform: uppercase;
+
+	/* Gray ( Paragraph ) */
+
+	color: #6c6c72;
+}
+.team__extra {
+	margin-top: 14px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	/* or 150% */
+
+	text-align: center;
+
+	/* Gray ( Paragraph ) */
+
+	color: #6c6c72;
+}
+.team__socialsites {
+	margin-top: 40px;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 53px;
+}
+.icon_links {
+	padding-top: 3.5px;
+}
+.icon__links:not(:first-child) {
+	margin-left: 9%;
+}
+.icon__links:not(:last-child) {
+	padding-right: 9%;
+	border-right: 1px solid #6c6c72;
+}
+.team__icon path {
+	fill: black;
+}
+.team__icon.active path,
+.team__icon:hover path {
+	fill: #5956e9;
+}
+.sections__ {
+	padding: 120px 9.375% 0 9.375%;
+}
+.sections__details {
+	text-align: center;
+	width: 51%;
+	margin: 0 auto;
+}
+.sections__heading {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 31.25px;
+	line-height: 47px;
+	/* identical to box height, or 151% */
+
+	text-transform: uppercase;
+
+	/* Black */
+
+	color: #232233;
+}
+.sections__body {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	/* or 150% */
+
+	text-align: center;
+
+	/* Gray ( Paragraph ) */
+
+	color: #6c6c72;
+	margin-top: 23px;
+}
+.sections__.customers {
+	background-image: url('../image/Background-Image.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.sections__heading.customers {
+	color: white;
+}
+.sections__body.customers {
+	color: white;
 }

@@ -13,3 +13,6 @@ a {
 	clear: both;
 	display: table;
 }
+.fb-icon path {
+	fill: red;
+}
