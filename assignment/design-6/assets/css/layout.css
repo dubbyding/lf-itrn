@@ -40,19 +40,23 @@
 .info__float.info__icon {
 	margin-right: 18px;
 }
-.nav__left {
-	float: left;
-}
-.nav__right {
-	float: right;
-}
 .header__navarea {
 	margin: 15px 0 0 0;
-	padding: 17px 0.3125rem 17px 4.44%;
+	padding: 5px 0.3125rem 5px 4.44%;
 	background: #ffffff;
 	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
 	position: relative;
+}
+.navigation {
+	width: 100%;
+}
+.navigation__area {
+	float: left;
+	width: 50%;
+}
+.navigation__semi__area.nav_right {
+	margin-left: 16%;
 }
 .nav__content__value {
 	font-style: normal;
@@ -66,9 +70,13 @@
 	/* Black */
 
 	color: #232233;
+	float: left;
+}
+.not__btn {
+	margin-top: 12px;
 }
 .nav__content__value:not(:last-child) {
-	margin-right: 2.375rem;
+	margin-right: 6.8%;
 }
 .header__logo {
 	position: absolute;
@@ -88,6 +96,9 @@
 
 	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
 	border-radius: 5px;
+}
+.hamburgur__logo {
+	display: none;
 }
 .hero__body {
 	display: inline-block;
@@ -914,8 +925,7 @@ footer .team__icon path {
 	color: lightgray;
 }
 .news__letter {
-	float: left;
-	margin-left: 21%;
+	float: right;
 	width: 31%;
 }
 .letter__art {
@@ -963,4 +973,7 @@ footer .team__icon path {
 	margin-left: -3.65%;
 	border-radius: 4px;
 	border: 0px solid #fff;
+}
+.hidden {
+	display: block;
 }

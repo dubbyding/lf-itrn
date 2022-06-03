@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="./assets/css/layout.css" />
 		<link rel="stylesheet" href="./assets/css/tablet.css" />
 		<link rel="stylesheet" href="./assets/css/mobile.css" />
+		<script src="./assets/js/script.js"></script>
 		<title>Semi-Final Assignment</title>
 	</head>
 	<body>
@@ -94,29 +95,33 @@
 				</div>
 			</div>
 			<div class="header__navarea">
-				<nav class="navigation clearfix">
-					<div class="nav__content nav__left">
-						<a href="#" class="nav__content__value" title="Intern Design Page"
-							>HOME</a
-						>
-						<a href="#" class="nav__content__value">ABOUT</a>
-						<a href="#" class="nav__content__value">FEATURES</a>
+				<nav class="navigation hidden clearfix" id="navs">
+					<div class="navigation__area clearfix">
+						<div class="navigation__semi__area">
+							<a href="" class="nav__content__value not__btn">home</a>
+							<a href="" class="nav__content__value not__btn">about</a>
+							<a href="" class="nav__content__value not__btn">features</a>
+						</div>
 					</div>
-					<div class="nav__content nav__right">
-						<a href="#" class="nav__content__value">SCREENSHOT</a>
-						<a href="#" class="nav__content__value">BLOG</a>
-						<a
-							href="#"
-							class="nav__content__value btn btn--primary"
-							title="Download App Now"
-							>DOWNLOAD</a
-						>
+					<div class="navigation__area clearfix">
+						<div class="navigation__semi__area nav_right clearfix">
+							<a href="" class="nav__content__value not__btn">Screenshot</a>
+							<a href="" class="nav__content__value not__btn">blog</a>
+							<a href="" class="nav__content__value btn btn--primary"
+								>Download</a
+							>
+						</div>
 					</div>
 				</nav>
 				<div class="header__logo">
 					<a href="./index.html" title="Intern Design Page">
 						<img src="./assets/image/Logo41.png" alt="logo" class="logo__img"
 					/></a>
+				</div>
+				<div class="hamburgur__logo">
+					<a href="#">
+						<img src="./assets/image/ham.svg" alt="ham" id="toggle" />
+					</a>
 				</div>
 			</div>
 		</header>
@@ -615,7 +620,7 @@
 				</p>
 			</article>
 			<div class="blog__section clearfix">
-				<div class="blog">
+				<div class="blog blog--first">
 					<img
 						src="./assets/image/snap.png"
 						alt="snapchat"
@@ -632,7 +637,7 @@
 					</article>
 					<a href="" class="blog__readmore"> Read more </a>
 				</div>
-				<div class="blog">
+				<div class="blog blog--first">
 					<img
 						src="./assets/image/insta.png"
 						alt="snapchat"
@@ -649,7 +654,7 @@
 					</article>
 					<a href="" class="blog__readmore"> Read more </a>
 				</div>
-				<div class="blog">
+				<div class="blog blog--second">
 					<img
 						src="./assets/image/random.png"
 						alt="snapchat"

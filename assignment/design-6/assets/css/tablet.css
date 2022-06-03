@@ -1,0 +1,94 @@
+@media screen and (max-width: 1200px) {
+	.header {
+		background: #5956e9;
+	}
+	.hero__body__section,
+	.aboutapp__body {
+		display: table;
+		margin: 0 auto;
+	}
+	.hero__text,
+	.aboutapp__details {
+		width: 100%;
+	}
+	.hero__text,
+	.hero__image__container,
+	.downloadapp_image {
+		padding-top: 50px;
+	}
+	.hero__image__container,
+	.downloadapp__button__area {
+		text-align: center;
+	}
+	.hero__text,
+	.hero__image__container,
+	.aboutapp__details,
+	.aboutapp__details__image,
+	.downloadapp_article,
+	.downloadapp_image {
+		float: none;
+		display: table;
+		margin: 0 auto;
+	}
+	.downloadapp_article {
+		width: 70%;
+	}
+	.blog--second {
+		float: none;
+	}
+	.blog {
+		width: 45%;
+		padding-bottom: 24px;
+	}
+	.navigation__semi__area {
+		float: none;
+		display: block;
+	}
+	.navigation__semi__area.nav_right {
+		margin: 0;
+	}
+	.nav__content__value {
+		display: block;
+		margin: 0;
+		float: none;
+		padding: 20px 0;
+		text-align: center;
+	}
+	.nav__content__value:not(:last-child) {
+		margin: 0;
+	}
+	.navigation__area {
+		width: 100%;
+	}
+	.header__logo {
+		top: 40px;
+		left: 0;
+	}
+	.hidden {
+		display: none;
+	}
+	.header__navarea {
+		padding: 10px 5%;
+		background: none;
+		box-shadow: none;
+	}
+	.hamburgur__logo {
+		display: block;
+		position: absolute;
+		top: 100%;
+		left: 98.5%;
+		transform: translate(-50%, -50%);
+		background: #fff;
+		border-radius: 50%;
+	}
+	.hamburgur__logo:hover {
+		background-color: lightgray;
+	}
+	.btn.btn--primary {
+		background: #5227cc;
+	}
+	.btn.btn--primary:hover {
+		background-color: #ebe5fc;
+		color: #5227cc;
+	}
+} ;
