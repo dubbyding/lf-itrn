@@ -17,7 +17,10 @@
 	.footer__email__id,
 	.footer__logo__area,
 	.quicklink,
-	.news__letter {
+	.news__letter,
+	.info__email,
+	.info__phone,
+	.info__socialsites {
 		float: none;
 	}
 	.contact__footer {
@@ -25,9 +28,23 @@
 	}
 	.footer__logo__area,
 	.quicklink,
-	.news__letter,
-	.footer__copyright {
+	.news__letter {
 		margin: 0;
 		margin-top: 40px;
+	}
+	.footer__copyright {
+		margin-top: 40px;
+	}
+	.info__email,
+	.info__phone,
+	.info__socialsites {
+		display: table;
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 5px;
+	}
+	.header__logo {
+		left: 10%;
+		transform: translate(-50%, -50%);
 	}
 }

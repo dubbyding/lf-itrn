@@ -106,7 +106,7 @@
 	width: 100%;
 	background-image: url('../image/Background-Image.png');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	margin-top: -138px;
 	padding-top: 138px;
 	z-index: -1;

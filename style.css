@@ -1,6 +1,6 @@
 a {
 	text-decoration: none;
-	color: blue;
+	color: rgb(13, 226, 52);
 }
 body {
 	background-image: url(./images/anime-manga-yellow-slayer.png);
@@ -26,9 +26,9 @@ section.center > div {
 	float: left;
 }
 .table {
-	background-color: hsla(63, 82%, 46%, 0.6);
+	background-color: hsla(63, 82%, 46%, 0.8);
 	border-radius: 20px;
-	color: #4e42d9;
+	color: #0d0ad0;
 }
 .table-content {
 	text-align: center;
