@@ -47,4 +47,16 @@
 		left: 10%;
 		transform: translate(-50%, -50%);
 	}
+	.about__team__detail,
+	.cards__front,
+	.downloadapp_article {
+		width: 100%;
+	}
+	.use__steps {
+		padding-left: 9.375%;
+		padding-right: 9.375%;
+	}
+	.downloadapp_article {
+		text-align: center;
+	}
 }
