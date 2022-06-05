@@ -107,4 +107,15 @@
 		left: 50%;
 		transform: translate(-50%, 0%);
 	}
+	.image__section {
+		margin-left: 12%;
+	}
+	.bottom__square {
+		top: 19%;
+		left: 54%;
+	}
+	.play__button__area {
+		top: 40%;
+		transform: translate(-50%, -100%);
+	}
 }

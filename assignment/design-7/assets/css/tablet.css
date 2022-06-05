@@ -58,4 +58,15 @@
 	.fea__art:nth-child(even) {
 		margin-left: 16%;
 	}
+	.for__heading {
+		padding-bottom: 20px;
+	}
+	.for__link {
+		margin-top: 17px;
+		padding: 10px 40px;
+	}
+	.bottom__square {
+		top: 60%;
+		left: 75%;
+	}
 }

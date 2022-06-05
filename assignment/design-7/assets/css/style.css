@@ -243,3 +243,79 @@
 
 	color: #696984;
 }
+.for__inst {
+	background-image: linear-gradient(
+			rgba(23, 27, 65, 0.5),
+			rgba(23, 27, 65, 0.5)
+		),
+		url('../images/instructor.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: 1px solid #000000;
+	border-radius: 20px;
+}
+.for__heading {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 48px;
+	/* identical to box height */
+
+	text-align: center;
+
+	color: #ffffff;
+}
+.for__link {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 33px;
+	/* identical to box height */
+
+	text-align: center;
+
+	color: #ffffff;
+	border-color: #fff;
+	background-color: transparent;
+}
+.for__stu {
+	background-image: linear-gradient(
+			rgba(23, 27, 65, 0.5),
+			rgba(23, 27, 65, 0.5)
+		),
+		url('../images/students.png');
+}
+.sample__vid__header {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 36px;
+	line-height: 160%;
+	/* or 58px */
+
+	color: #2f327d;
+}
+.sample__vid__header > span {
+	color: #f48c06;
+}
+.sample__vid__details {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 180%;
+	/* or 43px */
+
+	letter-spacing: 0.02em;
+
+	color: #696984;
+}
+.sample__vid__learn {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 180%;
+	/* identical to box height, or 40px */
+
+	text-decoration-line: underline;
+
+	color: #696984;
+}
