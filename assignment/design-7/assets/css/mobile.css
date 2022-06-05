@@ -34,6 +34,9 @@
 .col-12-md {
 	width: 100%;
 }
+.container {
+	padding: 120px 11% 0 11%;
+}
 .container,
 .row {
 	display: flex;
@@ -155,9 +158,7 @@
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-.features__section {
-	margin-top: 120px;
-}
+
 .features__header {
 	padding: 0 2%;
 }
@@ -216,9 +217,6 @@
 .sample__vid__heading {
 	position: relative;
 }
-.sample__vid {
-	padding: 120px 11% 0 11%;
-}
 .sample__vid__details,
 .sample__vid__learn {
 	margin-top: 30px;
@@ -269,4 +267,62 @@
 .play__button__area:hover {
 	background-color: lightgray;
 	cursor: pointer;
+}
+.our__body {
+	margin-top: 20px;
+}
+.image__section {
+	position: relative;
+	margin-top: 20px;
+}
+.hand__image {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 73px;
+	aspect-ratio: 1/1;
+	background-color: #fff;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hand__image:hover {
+	background-color: lightgray;
+}
+.detail__list {
+	margin-top: 51px;
+}
+.detail__body {
+	margin-left: 5%;
+}
+.list__row {
+	margin-bottom: 40px;
+}
+.detail__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.detail__icon > img {
+	width: 100%;
+}
+.detail__section {
+	margin-left: 4%;
+}
+.fetaures__all {
+	margin-top: 100px;
+}
+.tools,
+.assessment {
+	margin-top: 100px;
+	align-items: center;
+}
+.assessment {
+	flex-direction: column-reverse;
+}
+
+.assessment__heading {
+	margin-bottom: 20px;
 }
