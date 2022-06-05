@@ -1,0 +1,30 @@
+.logo__name {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 48px;
+	/* identical to box height */
+
+	letter-spacing: 0.04em;
+
+	color: #113c49;
+}
+.hidden {
+	display: none;
+	height: 0px;
+	transition: height 2s linear ease;
+}
+.nav-content-list {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 33px;
+	/* identical to box height */
+
+	letter-spacing: 0.02em;
+
+	color: #252641;
+}
+.active {
+	color: orange;
+}

@@ -1,0 +1,23 @@
+.btn {
+	padding: 13px 50px;
+	border-radius: 80px;
+}
+.btn.btn--primary {
+	color: white;
+	background: #f48c06;
+}
+.btn.btn--primary:hover {
+	background: #965603;
+	cursor: pointer;
+	box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.11);
+}
+.btn.btn--secondary {
+	color: #6c6c6c;
+	background: #ffffff;
+	box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.03);
+}
+.btn.btn--secondary:hover {
+	background: #bdbcbc;
+	cursor: pointer;
+	box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.11);
+}
