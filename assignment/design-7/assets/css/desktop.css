@@ -130,4 +130,19 @@
 	.assessment {
 		flex-direction: row;
 	}
+	.comment {
+		position: absolute;
+		top: 100%;
+		left: 100%;
+		transform: translate(-60%, -60%);
+	}
+	.small__article {
+		margin-left: 8%;
+	}
+	.overlapp {
+		position: absolute;
+		top: 85%;
+		left: 21%;
+		transform: translate(-20%, -50%);
+	}
 }

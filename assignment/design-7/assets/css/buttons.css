@@ -1,11 +1,11 @@
 .btn {
 	padding: 13px 38px;
 	border-radius: 80px;
+	transition: 0.2s ease;
 }
 .btn.btn--primary {
 	color: white;
 	background: #f48c06;
-	transition: 0.2s ease;
 }
 .btn.btn--primary:hover {
 	background: #965603;
@@ -16,7 +16,6 @@
 	color: #6c6c6c;
 	background: #ffffff;
 	box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.03);
-	transition: 0.2s ease;
 }
 .btn.btn--secondary:hover {
 	background: #bdbcbc;
@@ -30,4 +29,22 @@
 }
 .fea__art {
 	margin-bottom: 100px;
+}
+.btn.btn--trans {
+	background-color: #ffffff;
+	color: #f48c06;
+	border: 1px solid #f48c06;
+}
+.btn.btn--trans:hover {
+	color: #ffffff;
+	background: #f48c06;
+}
+.btn.btn--subsribe {
+	background: linear-gradient(105.5deg, #545ae7 19.57%, #393fcf 78.85%);
+	border-radius: 60px;
+	color: white;
+}
+.btn.btn--subsribe:hover {
+	cursor: pointer;
+	background: linear-gradient(105.5deg, #20237b 19.57%, #171b89 78.85%);
 }

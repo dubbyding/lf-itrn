@@ -69,4 +69,15 @@
 		top: 60%;
 		left: 75%;
 	}
+	.news {
+		margin-top: 40px;
+	}
+	.footer__logo__name {
+		top: 50%;
+	}
+	.footer__detail {
+		border-left: 1px solid #626381;
+		padding-left: 8%;
+		margin: 0;
+	}
 }
