@@ -54,4 +54,57 @@
 	.nav-content.btn.btn--secondary {
 		margin-right: 2.36%;
 	}
+	.hero__section {
+		border-radius: 0 0 30% 30%;
+	}
+	.hero__image {
+		margin-left: 20%;
+		height: 100%;
+	}
+	.play__btn {
+		margin-left: 2%;
+	}
+
+	.hero__content {
+		padding-bottom: 100px;
+	}
+	.hero__details {
+		text-align: left;
+	}
+
+	.user__experience {
+		display: flex;
+	}
+	.hero__art {
+		padding-left: 4%;
+	}
+	.user__image__experience {
+		display: inline;
+	}
+	.hero__details__icons {
+		display: flex;
+	}
+	.congrats {
+		margin-left: auto;
+	}
+	.bottom_margin {
+		flex-direction: row;
+	}
+	.features__header {
+		padding: 0 28%;
+	}
+	.fea__art {
+		display: flex;
+		padding: 122px 2% 0 2%;
+		width: 32.6%;
+		margin-bottom: 0;
+	}
+	.fea__art:not(:first-child) {
+		margin-left: 1%;
+	}
+	.fea__art__icon {
+		top: -10%;
+		left: 50%;
+		transform: translate(-50%, 0%);
+	}
 }

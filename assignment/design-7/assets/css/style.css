@@ -1,3 +1,6 @@
+.header-md {
+	background: #fff2e1;
+}
 .logo__name {
 	font-style: normal;
 	font-weight: 700;
@@ -27,4 +30,216 @@
 }
 .active {
 	color: orange;
+}
+.hero__section {
+	background: #fff2e1;
+	overflow: hidden;
+}
+.hero__header {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 54px;
+	line-height: 81px;
+
+	color: #2f327d;
+}
+.hero__body {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 160%;
+	/* or 38px */
+
+	color: #464646;
+}
+.hero__header__color {
+	color: #f48c06;
+}
+.join__btn {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height */
+	text-align: center;
+}
+.play__btn__detail {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height */
+
+	color: #252641;
+}
+.hero__image {
+	background-image: url(../images/lovely-teenage-girl-with-curly-hair-posing-yellow-tshirt-min\ 1.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+}
+.play__button {
+	background: #fff;
+}
+.play__button:hover {
+	background-color: lightgray;
+}
+.hero__details {
+	background: rgba(255, 255, 255, 0.8);
+	backdrop-filter: blur(20px);
+	/* Note: backdrop-filter has minimal browser support */
+
+	border-radius: 20px;
+	padding: 10px;
+}
+.hero__art__header {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 180%;
+	/* or 43px */
+
+	letter-spacing: 0.02em;
+
+	color: #595959;
+}
+.hero__art__detail {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 180%;
+	/* identical to box height, or 36px */
+
+	letter-spacing: 0.02em;
+
+	color: #545567;
+}
+.hero__icon svg {
+	border-radius: 8px;
+	width: 50px;
+	height: 50px;
+	padding: 11.25px;
+}
+.icon__calendar svg {
+	background: #23bdee;
+}
+.no__background {
+	background: none;
+	backdrop-filter: none;
+	display: flex;
+	justify-content: center;
+}
+.stats__icon svg {
+	background-color: #f3627c;
+}
+.email__icon svg {
+	background: #f88c3d;
+}
+.trusted__company {
+	padding: 0 15%;
+}
+.company__logo {
+	padding: 0 2.8%;
+}
+.trusted__heading {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 28px;
+	line-height: 160%;
+	/* identical to box height, or 45px */
+
+	letter-spacing: 0.02em;
+
+	color: #696984;
+	text-align: center;
+	width: 100%;
+}
+.trusted__logo {
+	margin-top: 30px;
+}
+.features__header {
+	justify-content: center;
+	text-align: center;
+}
+.features__heading {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 180%;
+	/* identical to box height, or 65px */
+	color: #f48c06;
+}
+.features__heading > span {
+	color: #2f327d;
+}
+.features__details {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 180%;
+	/* or 43px */
+
+	text-align: center;
+}
+.fea__art {
+	position: relative;
+	text-align: center;
+	background: #ffffff;
+	box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
+	border-radius: 20px;
+	transition: 0.2s ease;
+}
+.fea__art__heading {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 45px;
+
+	color: #2f327d;
+}
+.fea__art__body {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 180%;
+	/* or 36px */
+
+	text-align: center;
+
+	color: #696984;
+}
+.fea__art__icon {
+	position: absolute;
+}
+.color--F48C06 {
+	background-color: #f48c06;
+}
+.color--29B9E7 {
+	background-color: #29b9e7;
+}
+.fea__art:hover {
+	box-shadow: 10px 10px rgba(0, 0, 0, 0.12);
+}
+.def__heading {
+	font-style: normal;
+	font-weight: 600;
+	font-size: 44px;
+	line-height: 180%;
+	/* or 79px */
+
+	text-align: center;
+
+	color: #2f327d;
+}
+.def__answer {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 180%;
+	/* or 43px */
+
+	text-align: center;
+	letter-spacing: 0.02em;
+
+	color: #696984;
 }

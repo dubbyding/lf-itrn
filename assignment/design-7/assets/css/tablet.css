@@ -35,4 +35,27 @@
 	.col-12-tb {
 		width: 100%;
 	}
+	.play__btn {
+		margin: 0;
+		margin-top: 20px;
+	}
+	.company__logo {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.features__header {
+		padding: 0 10%;
+	}
+	.fea__art {
+		display: flex;
+		padding: 122px 5% 50px 5%;
+	}
+	.fea__art__icon {
+		top: -10%;
+		left: 50%;
+		transform: translate(-50%, 30%);
+	}
+	.fea__art:nth-child(even) {
+		margin-left: 16%;
+	}
 }

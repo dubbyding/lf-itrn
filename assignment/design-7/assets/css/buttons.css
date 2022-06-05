@@ -1,10 +1,11 @@
 .btn {
-	padding: 13px 50px;
+	padding: 13px 38px;
 	border-radius: 80px;
 }
 .btn.btn--primary {
 	color: white;
 	background: #f48c06;
+	transition: 0.2s ease;
 }
 .btn.btn--primary:hover {
 	background: #965603;
@@ -15,9 +16,18 @@
 	color: #6c6c6c;
 	background: #ffffff;
 	box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.03);
+	transition: 0.2s ease;
 }
 .btn.btn--secondary:hover {
 	background: #bdbcbc;
 	cursor: pointer;
 	box-shadow: 0px 20px 24px rgba(0, 0, 0, 0.11);
+}
+.btn.join__now {
+	background: #d8587e;
+	padding: 10px 0;
+	text-align: center;
+}
+.fea__art {
+	margin-bottom: 100px;
 }

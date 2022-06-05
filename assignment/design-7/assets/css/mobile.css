@@ -42,7 +42,6 @@
 }
 .header-md {
 	padding: 60px 6.56% 0 5%;
-	background: #fff2e1;
 }
 .logo {
 	display: flex;
@@ -78,4 +77,119 @@
 }
 .nav-content {
 	margin: 20px 0;
+}
+.hero__section {
+	padding: 92px 7.2% 0 7.2%;
+	border-radius: 0 0 10% 10%;
+}
+.hero__body {
+	margin-top: 34px;
+}
+.hero__button {
+	display: flex;
+	margin-top: 30px;
+	flex-wrap: wrap;
+}
+.hero__btn {
+	display: flex;
+	padding: 22px 38px;
+	flex-wrap: wrap;
+}
+.actual__btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.play__btn {
+	margin-top: 20px;
+}
+.play__btn__detail {
+	padding-left: 2%;
+}
+.play__button {
+	width: 80px;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	background: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hero__image {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 20px;
+	align-items: center;
+	justify-content: center;
+}
+.hero__details {
+	text-align: center;
+}
+.user__image__experience {
+	display: flex;
+	justify-content: center;
+}
+.hero__art__header {
+	font-size: 16px;
+}
+.hero__art__detail {
+	font-size: 14px;
+}
+.details__right {
+	margin-left: 3%;
+	margin-top: -5%;
+	height: 100%;
+}
+.details__left {
+	margin-left: -3%;
+	margin-top: 5%;
+}
+.bottom_margin {
+	margin-bottom: 30px;
+	flex-direction: row-reverse;
+}
+.trusted__company {
+	margin-top: 101px;
+}
+.company__logo {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.features__section {
+	margin-top: 120px;
+}
+.features__header {
+	padding: 0 2%;
+}
+.features__body {
+	padding: 160px 11% 0 11%;
+}
+.fea__art {
+	display: flex;
+	padding: 122px 12% 50px 12%;
+}
+.fea__art__icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 22%;
+	top: -10%;
+	left: 50%;
+	transform: translate(-50%, 30%);
+	background: #5b72ee;
+	box-shadow: 0px 10px 40px rgba(54, 61, 136, 0.06);
+	border-radius: 50%;
+	aspect-ratio: 1/1;
+}
+.fea__art__icon > img {
+	width: 50%;
+}
+.fea__art__body {
+	margin-top: 24px;
+}
+.product__defination {
+	padding: 0 11%;
+}
+.def__answer {
+	margin-top: 20px;
 }
