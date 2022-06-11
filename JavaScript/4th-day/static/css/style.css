@@ -18,6 +18,15 @@ body {
 	background-color: blue;
 	color: white;
 }
+.btn.btn-danger {
+	background-color: red;
+	color: white;
+}
+.btn.btn-danger:hover {
+	cursor: pointer;
+	background-color: maroon;
+	color: white;
+}
 .btn.btn-primary:hover {
 	cursor: pointer;
 	background-color: purple;
@@ -26,4 +35,7 @@ body {
 .btn.btn-primary:active {
 	background-color: purple;
 	color: white;
+}
+.hover:hover {
+	cursor: pointer;
 }

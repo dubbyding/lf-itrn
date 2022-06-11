@@ -11,6 +11,7 @@ class Objects {
 
 		for (let i = 0; i < pointsAmount; i++) {
 			let j = 0;
+
 			do {
 				if (points.length == 0) {
 					x = getRndInteger(20, window.innerHeight - 20);
@@ -96,6 +97,8 @@ class Objects {
 		this.element.appendChild(dot);
 
 		this.val = document.getElementById(this.id);
+	};
+	clickEventDelete = () => {
 		this.val.addEventListener('click', this.deletePoint);
 	};
 	addHover = () => {
@@ -103,6 +106,7 @@ class Objects {
 	};
 	deletePoint = () => {
 		this.element.removeChild(this.val);
+		this.clearAllInterval();
 	};
 	ballPosition = () => {
 		let width = parseInt(this.val.style.width);
@@ -333,5 +337,11 @@ let getBalls = (number) => {
 		ballBounce[i].plotPoints(points[i]);
 		ballBounce[i].ballBounceWall(directionGive(), directionGive(), 1);
 		ballBounce[i].ballCollision(ballBounce);
+	}
+};
+let deleteOnClick = () => {
+	for (let i in ballBounce) {
+		ballBounce[i].addHover();
+		ballBounce[i].clickEventDelete();
 	}
 };
