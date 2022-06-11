@@ -372,8 +372,12 @@ function directionGive() {
 	return direction;
 }
 
+/**
+ * Return a random number between 1 and 3.
+ * @returns A random number between 1 and 3.
+ */
 function randomSpeed() {
-	return Math.floor(Math.random() * 5) + 1;
+	return Math.floor(Math.random() * 3) + 1;
 }
 
 let points = [
