@@ -21,7 +21,9 @@ class Objects {
 		for (let i = 0; i < pointsAmount; i++) {
 			let j = 0;
 
+			/* Generating random circles with random coordinates, width, and mass. */
 			do {
+				/* Creating a new point every time the loop runs. */
 				if (points.length == 0) {
 					x = getRndInteger(20, window.innerHeight - 20);
 					y = getRndInteger(20, window.innerWidth - 20);
@@ -49,16 +51,20 @@ class Objects {
 				let neighbourWidth = points[j].width;
 				let neighbourMass = points[j].mass;
 
+				/* Calculating the center of the neighbour circle and the radius of the neighbour circle. */
 				let neighbourCenterX = (neighbourX + neighbourWidth) / 2;
 				let neighbourCenterY = (neighbourY + neighbourWidth) / 2;
 
 				let neighbourRadius = (neighbourMass * neighbourWidth) / 2;
+
+				/* Generating random coordinates for a circle. */
 				do {
 					x = getRndInteger(20, window.innerHeight - 50);
 					y = getRndInteger(20, window.innerWidth - 50);
 					width = getRndInteger(10, 20);
 					mass = getRndInteger(1, 2);
 
+					/* Generating Center and radius of randomly generated circle */
 					let centerX = (x + width) / 2;
 					let centerY = (y + width) / 2;
 
@@ -130,8 +136,10 @@ class Objects {
 	ballPosition = () => {
 		let width = parseInt(this.val.style.width);
 		let height = parseInt(this.val.style.height);
+
 		let x = parseInt(this.x);
 		let y = parseInt(this.y);
+
 		return {
 			ballXMin: x,
 			ballXMax: x + height,
@@ -156,30 +164,35 @@ class Objects {
 		this.ballXMax = pos.ballXMax;
 		this.ballYMin = pos.ballYMin;
 		this.ballYMax = pos.ballYMax;
+
+		/* Calculate the center of current ball */
 		let radius = parseInt(this.width) / 2;
 		let centerX = Math.round((this.ballXMax + this.ballXMin) / 2);
 		let centerY = Math.round((this.ballYMax + this.ballYMin) / 2);
-		let dx1 = centerX - this.xMin;
-		let dx2 = this.xMax - centerX;
-		let dy3 = this.yMax - centerY;
-		let dy4 = centerY - this.yMin;
 
-		if (dx1 < radius) {
+		/* Calculate the distance between the edges */
+		let distancex1 = centerX - this.xMin;
+		let distancex2 = this.xMax - centerX;
+		let distancey3 = this.yMax - centerY;
+		let distancey4 = centerY - this.yMin;
+
+		/* Checking if ball is going off the edge */
+		if (distancex1 < radius) {
 			if (this.xAdd < 0) {
 				this.xAdd *= -1;
 			}
 		}
-		if (dx2 < radius) {
+		if (distancex2 < radius) {
 			if (this.xAdd > 0) {
 				this.xAdd *= -1;
 			}
 		}
-		if (dy3 < radius) {
+		if (distancey3 < radius) {
 			if (this.yAdd > 0) {
 				this.yAdd *= -1;
 			}
 		}
-		if (dy4 < radius) {
+		if (distancey4 < radius) {
 			if (this.yAdd < 0) {
 				this.yAdd *= -1;
 			}
@@ -201,12 +214,14 @@ class Objects {
 		this.yMax = parseInt(value.width);
 		this.xMax = parseInt(value.height);
 
+		/* Setting the frames per second to 60 and then it is calculating the time between each frame. */
 		let fps = 60;
 		this.frames = 1000 / fps;
 
 		this.xAdd = xAdd * speed;
 		this.yAdd = yAdd * speed;
 
+		/* Setting the interval of the ballMovement function to the ballWallBounceInterval variable. */
 		this.ballWallBounceInterval = setInterval(this.ballMovement, this.frames);
 	};
 
@@ -220,6 +235,9 @@ class Objects {
 	ballDetect = () => {
 		for (let i in this.ballBounce) {
 			let neighbourElement = this.ballBounce[i];
+
+			/* Checking if the id of the current element is greater than the id of the neighbour element. If it
+			is, then it is checking if the two elements are colliding. */
 			if (parseInt(neighbourElement.id) > parseInt(this.id)) {
 				let pos = neighbourElement.ballPosition();
 				let neighbourXMin = pos.ballXMin;
@@ -227,6 +245,7 @@ class Objects {
 				let neighbourYMin = pos.ballYMin;
 				let neighbourYMax = pos.ballYMax;
 
+				/* Calculating the center of the ball and the radius of the ball. */
 				let ballXCenter = Math.round(
 					Math.abs(this.ballXMax + this.ballXMin) / 2
 				);
@@ -236,6 +255,7 @@ class Objects {
 
 				let ballRadius = Math.round(parseInt(this.width) / 2);
 
+				/* Calculating the center of the ball and the radius of the ball. */
 				let neighbourXCenter = Math.round(
 					Math.abs(neighbourXMax + neighbourXMin) / 2
 				);
@@ -244,11 +264,16 @@ class Objects {
 				);
 				let neighbourRadius = Math.round(parseInt(neighbourElement.width) / 2);
 
+				/* Calculating the distance between the two balls. */
 				let dx = neighbourXCenter - ballXCenter;
 				let dy = neighbourYCenter - ballYCenter;
 				let distance = Math.sqrt(dx * dx + dy * dy);
 				let radiusSum = ballRadius + neighbourRadius;
 
+				/* Checking if the distance between the two elements is less than the sum of their radii. If it is,
+				then it is swapping the x and y velocities of the two elements. Then it is checking if the x
+				velocities are different. If they are, then it is swapping the x velocities again, but this time
+				it is also adding the x velocities to the x positions of the two elements to calculate the momentum. Then it is doing the same thing for the y velocities. Then it is setting the top and left positions of the two	elements to their new x */
 				if (distance < radiusSum) {
 					[this.xAdd, neighbourElement.xAdd] = [
 						neighbourElement.xAdd,
