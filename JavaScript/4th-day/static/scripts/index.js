@@ -1,10 +1,19 @@
 class Objects {
+	/* Creating a class called BallBounce. */
+	/**
+	 * This function creates a new object with the properties elementId, element, color, and id.
+	 * @param elementId - The id of the element you want to change the color of.
+	 * @param color - The color of the circle.
+	 * @param id - The id of the element.
+	 */
 	constructor(elementId, color, id) {
 		this.elementId = elementId;
 		this.element = document.getElementById(this.elementId);
 		this.color = color;
 		this.id = id;
 	}
+
+	/* Generating random points on the canvas. */
 	getPoints = (pointsAmount) => {
 		let points = [];
 		let x, y, width, mass;
@@ -76,6 +85,8 @@ class Objects {
 		}
 		return points;
 	};
+
+	/* Creating a div element and adding it to the page. */
 	plotPoints = (points) => {
 		this.x = points.x;
 		this.y = points.y;
@@ -98,16 +109,24 @@ class Objects {
 
 		this.val = document.getElementById(this.id);
 	};
+
+	/* It adds a click event to the ball. */
 	clickEventDelete = () => {
 		this.val.addEventListener('click', this.deletePoint);
 	};
+
+	/* It adds a hover class to the ball. */
 	addHover = () => {
 		this.val.classList.add('hover');
 	};
+
+	/* It removes the ball from the screen and clears the interval. */
 	deletePoint = () => {
 		this.element.removeChild(this.val);
 		this.clearAllInterval();
 	};
+
+	/* Returning the position of the ball. */
 	ballPosition = () => {
 		let width = parseInt(this.val.style.width);
 		let height = parseInt(this.val.style.height);
@@ -120,6 +139,8 @@ class Objects {
 			ballYMax: y + width,
 		};
 	};
+
+	/* Reversing the direction of the ball. */
 	reversePos = (toDo) => {
 		if (toDo == 'x') {
 			this.xAdd *= -1;
@@ -127,6 +148,8 @@ class Objects {
 			this.yAdd *= -1;
 		}
 	};
+
+	/* A function that is used to make the balls bounce off the walls. */
 	ballMovement = () => {
 		let pos = this.ballPosition();
 		this.ballXMin = pos.ballXMin;
@@ -168,6 +191,8 @@ class Objects {
 		this.y += this.yAdd;
 		this.val.style.left = `${this.y}px`;
 	};
+
+	/* A function that is used to make the balls bounce off the walls. */
 	ballBounceWall = (xAdd, yAdd, speed) => {
 		let value = getComputedStyle(document.querySelector(`#${this.elementId}`));
 
@@ -184,10 +209,14 @@ class Objects {
 
 		this.ballWallBounceInterval = setInterval(this.ballMovement, this.frames);
 	};
+
+	/* Detecting the collision between the balls. */
 	ballCollision = (ballBounce) => {
 		this.ballBounce = ballBounce;
 		this.ballCollisionInterval = setInterval(this.ballDetect, this.frames);
 	};
+
+	/* The above code is detecting the collision between the balls. */
 	ballDetect = () => {
 		for (let i in this.ballBounce) {
 			let neighbourElement = this.ballBounce[i];
@@ -268,29 +297,53 @@ class Objects {
 			}
 		}
 	};
+
+	/* It clears the interval of the ballCollisionInterval and ballWallBounceInterval. */
 	clearAllInterval = () => {
 		clearInterval(this.ballCollisionInterval);
 		clearInterval(this.ballWallBounceInterval);
 	};
 }
+/**
+ * It returns a random integer between the two parameters, but if the random integer is 0, it returns 1
+ * instead.
+ * @param min - The minimum number you want to generate.
+ * @param max - The maximum number of items to be returned.
+ * @returns A random number between min and max.
+ */
 function getRndInteger(min, max) {
 	let val = Math.floor(Math.random() * (max - min + 1)) + min;
+
 	if (val == 0) {
 		val++;
 	}
+
 	return val;
 }
+
+/**
+ * It generates a random color code in hexadecimal format.
+ * @returns A string of 6 characters, each of which is a hexadecimal digit.
+ */
 function getColorCode() {
 	let colorRange = '0123456789ABCDEF';
 	let colorCode = '#';
+
 	for (let i = 0; i < 6; i++) {
 		let index = Math.floor(Math.random() * colorRange.length);
+
 		colorCode += colorRange[index];
 	}
 	return colorCode;
 }
+
+/**
+ * If a random number is greater than 0.5, return 1, otherwise return -1.
+ * @returns a random number between 1 and -1.
+ */
 function directionGive() {
 	let direction = Math.random() > 0.5 ? 1 : -1;
+
 	return direction;
 }
 
@@ -310,18 +363,27 @@ let points = [
 ];
 
 let ballBounce = [];
+
+/* Creating 10 balls and adding them to the page. */
 window.onload = () => {
 	let totalNumberOfBalls = 10;
 	for (let i = 0; i < totalNumberOfBalls; i++) {
 		ballBounce.push(new Objects('root', getColorCode(), `${i}-ball`));
+
 		if (i == 0) {
 			points = ballBounce[i].getPoints(totalNumberOfBalls);
 		}
+
 		ballBounce[i].plotPoints(points[i]);
 		ballBounce[i].ballBounceWall(directionGive(), directionGive(), 1);
 		ballBounce[i].ballCollision(ballBounce);
 	}
 };
+
+/**
+ * It creates a bunch of balls that bounce around the screen and bounce off each other.
+ * @param number - number of balls
+ */
 let getBalls = (number) => {
 	let mainRoot = document.getElementById('root');
 	mainRoot.innerHTML = '';
@@ -331,14 +393,20 @@ let getBalls = (number) => {
 	ballBounce = [];
 	for (let i = 0; i < number; i++) {
 		ballBounce.push(new Objects('root', getColorCode(), `${i}-ball`));
+
 		if (i == 0) {
 			points = ballBounce[i].getPoints(number);
 		}
+
 		ballBounce[i].plotPoints(points[i]);
 		ballBounce[i].ballBounceWall(directionGive(), directionGive(), 1);
 		ballBounce[i].ballCollision(ballBounce);
 	}
 };
+
+/**
+ * For each ballBounce object, add a hover event and a click event.
+ */
 let deleteOnClick = () => {
 	for (let i in ballBounce) {
 		ballBounce[i].addHover();
