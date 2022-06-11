@@ -372,6 +372,10 @@ function directionGive() {
 	return direction;
 }
 
+function randomSpeed() {
+	return Math.floor(Math.random() * 5) + 1;
+}
+
 let points = [
 	{
 		x: 20,
@@ -400,7 +404,11 @@ window.onload = () => {
 		}
 
 		ballBounce[i].plotPoints(points[i]);
-		ballBounce[i].ballBounceWall(directionGive(), directionGive(), 1);
+		ballBounce[i].ballBounceWall(
+			directionGive(),
+			directionGive(),
+			randomSpeed()
+		);
 		ballBounce[i].ballCollision(ballBounce);
 	}
 };
