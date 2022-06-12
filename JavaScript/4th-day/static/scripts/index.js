@@ -270,48 +270,89 @@ class Objects {
 				let distance = Math.sqrt(dx * dx + dy * dy);
 				let radiusSum = ballRadius + neighbourRadius;
 
-				/* Checking if the distance between the two elements is less than the sum of their radii. If it is,
-				then it is swapping the x and y velocities of the two elements. Then it is checking if the x
-				velocities are different. If they are, then it is swapping the x velocities again, but this time
-				it is also adding the x velocities to the x positions of the two elements to calculate the momentum. Then it is doing the same thing for the y velocities. Then it is setting the top and left positions of the two	elements to their new x */
+				/* Calculating the distance between two elements and then calculating the sum of their radii. If
+				the distance is less than the sum of the radii, then it is calculating the mass of each element
+				and then calculating the x and y add values using Elastic Collision Concept. It then checks if the x and y add values are positive or negative and then checks if the current element is bigger than the neighbour element. If it is, then it checks if the distance between the two elements is positive or
+				negative and then changes the x and y add values accordingly. It then adds the x and y add values to the x and y position of the ball*/
 				if (distance < radiusSum) {
+					let currentMass = parseInt(this.width) * this.mass;
+					let neighbourMass =
+						parseInt(neighbourElement.width) * neighbourElement.mass;
+
 					[this.xAdd, neighbourElement.xAdd] = [
-						neighbourElement.xAdd,
-						this.xAdd,
+						(neighbourElement.xAdd * neighbourMass) / currentMass,
+						(this.xAdd * currentMass) / neighbourMass,
 					];
 					[this.yAdd, neighbourElement.yAdd] = [
-						neighbourElement.yAdd,
-						this.yAdd,
+						(neighbourElement.yAdd * neighbourMass) / currentMass,
+						(this.yAdd * currentMass) / neighbourMass,
 					];
 
-					if (this.xAdd != neighbourElement.xAdd) {
-						[this.xAdd, neighbourElement.xAdd] = [
-							(this.xAdd *
-								neighbourElement.mass *
-								parseInt(neighbourElement.width)) /
-								(this.mass * parseInt(this.width)),
+					let positiveSameDirectionX =
+						this.xAdd > 0 && neighbourElement.xAdd > 0;
+					let negativeSameDirectionX =
+						this.xAdd < 0 && neighbourElement.xAdd < 0;
 
-							(neighbourElement.xAdd * this.mass * parseInt(this.width)) /
-								(neighbourElement.mass * parseInt(neighbourElement.width)),
-						];
-
-						this.x += this.xAdd * 5;
-						neighbourElement.x += neighbourElement.xAdd * 5;
+					if (positiveSameDirectionX) {
+						if (currentMass > neighbourMass) {
+							if (dx < 0 && dy < 0) {
+								neighbourElement.xAdd *= -1;
+							}
+						} else {
+							if (dx > 0 && dy > 0) {
+								this.xAdd *= -1;
+							}
+						}
 					}
-					if (this.yAdd != neighbourElement.yAdd) {
-						[this.yAdd, neighbourElement.yAdd] = [
-							(this.yAdd *
-								neighbourElement.mass *
-								parseInt(neighbourElement.width)) /
-								(this.mass * parseInt(this.width)),
-
-							(neighbourElement.yAdd * this.mass * parseInt(this.width)) /
-								(neighbourElement.mass * parseInt(neighbourElement.width)),
-						];
-
-						this.y += this.yAdd * 5;
-						neighbourElement.y += neighbourElement.yAdd * 5;
+					if (negativeSameDirectionX) {
+						if (currentMass > neighbourMass) {
+							if (dx > 0 && dy > 0) {
+								neighbourElement.xAdd *= -1;
+							}
+						} else {
+							if (dx < 0 && dy < 0) {
+								this.xAdd *= -1;
+							}
+						}
 					}
+
+					let positiveSameDirectionY =
+						this.yAdd > 0 && neighbourElement.yAdd > 0;
+					let negativeSameDirectionY =
+						this.yAdd < 0 && neighbourElement.yAdd < 0;
+
+					if (positiveSameDirectionY) {
+						if (currentMass > neighbourMass) {
+							if (dx < 0 && dy < 0) {
+								neighbourElement.yAdd *= -1;
+							}
+						} else {
+							if (dx > 0 && dy > 0) {
+								this.yAdd *= -1;
+							}
+						}
+					}
+					if (negativeSameDirectionY) {
+						if (currentMass > neighbourMass) {
+							if (dx > 0 && dy > 0) {
+								neighbourElement.yAdd *= -1;
+							}
+						} else {
+							if (dx < 0 && dy < 0) {
+								this.yAdd *= -1;
+							}
+						}
+					}
+
+					this.x += this.xAdd * ((parseInt(this.width) * this.mass) / 8);
+					neighbourElement.x +=
+						neighbourElement.xAdd *
+						((parseInt(neighbourElement.width) * neighbourElement.mass) / 8);
+
+					this.y += this.yAdd * ((parseInt(this.width) * this.mass) / 8);
+					neighbourElement.y +=
+						neighbourElement.yAdd *
+						((parseInt(neighbourElement.width) * neighbourElement.mass) / 8);
 
 					this.val.style.top = `${this.x}px`;
 					neighbourElement.val.style.top = `${neighbourElement.x}px`;
@@ -373,11 +414,11 @@ function directionGive() {
 }
 
 /**
- * Return a random number between 1 and 3.
- * @returns A random number between 1 and 3.
+ * It returns a random number between 1 and 5.
+ * @returns A random number between 1 and 5.
  */
 function randomSpeed() {
-	return Math.floor(Math.random() * 3) + 1;
+	return Math.floor(Math.random() * 5) + 1;
 }
 
 let points = [
